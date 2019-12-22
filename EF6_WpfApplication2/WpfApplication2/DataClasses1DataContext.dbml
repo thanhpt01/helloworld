@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Zalora_App" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQL2008;Initial Catalog=Zalora_App;Integrated Security=True" SettingsObjectName="WpfApplication2.Properties.Settings" SettingsPropertyName="Zalora_AppConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TableSchema" Member="TableSchemas">
+    <Type Name="TableSchema" Id="ID1">
+      <Column Name="TableName" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="ColumnName" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="DataType" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="MaxLength" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsPrimaryKey" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ParametersSchema" Member="ParametersSchemas">
+    <Type Name="ParametersSchema" Id="ID2">
+      <Column Name="SPECIFIC_NAME" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="ORDINAL_POSITION" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PARAMETER_MODE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="PARAMETER_NAME" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="DATA_TYPE" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="CHARACTER_MAXIMUM_LENGTH" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NUMERIC_PRECISION" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="NUMERIC_SCALE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.GetTableSchema" Method="GetTableSchema">
+    <Parameter Name="table" Type="System.String" DbType="VarChar(50)" />
+    <ElementType IdRef="ID1" />
+  </Function>
+  <Function Name="dbo.GetPARAMETERS" Method="GetPARAMETERS">
+    <Parameter Name="store" Type="System.String" DbType="VarChar(50)" />
+    <ElementType IdRef="ID2" />
+  </Function>
+</Database>
