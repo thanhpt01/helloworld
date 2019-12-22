@@ -13,6 +13,8 @@ namespace ConsoleApplication1
             //mới sửa 1 tý
             Console.WriteLine("This is console");
             Console.ReadLine();
+            //sửa tý nữa nè
+            Console.ReadLine();
         }
     }
 }
