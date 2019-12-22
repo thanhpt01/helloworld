@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BILInfo" msprop:Generator_TableClassName="BILInfoDataTable" msprop:Generator_TableVarName="tableBILInfo" msprop:Generator_RowChangedName="BILInfoRowChanged" msprop:Generator_TablePropName="BILInfo" msprop:Generator_RowDeletingName="BILInfoRowDeleting" msprop:Generator_RowChangingName="BILInfoRowChanging" msprop:Generator_RowEvHandlerName="BILInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="BILInfoRowDeleted" msprop:Generator_RowClassName="BILInfoRow" msprop:Generator_UserTableName="BILInfo" msprop:Generator_RowEvArgName="BILInfoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CorpNCode" msprop:Generator_ColumnVarNameInTable="columnCorpNCode" msprop:Generator_ColumnPropNameInRow="CorpNCode" msprop:Generator_ColumnPropNameInTable="CorpNCodeColumn" msprop:Generator_UserColumnName="CorpNCode" type="xs:string" />
+              <xs:element name="FiscalYearSt" msprop:Generator_ColumnVarNameInTable="columnFiscalYearSt" msprop:Generator_ColumnPropNameInRow="FiscalYearSt" msprop:Generator_ColumnPropNameInTable="FiscalYearStColumn" msprop:Generator_UserColumnName="FiscalYearSt" type="xs:string" />
+              <xs:element name="ItemID" msprop:Generator_ColumnVarNameInTable="columnItemID" msprop:Generator_ColumnPropNameInRow="ItemID" msprop:Generator_ColumnPropNameInTable="ItemIDColumn" msprop:Generator_UserColumnName="ItemID" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BILSwkInfo" msprop:Generator_TableClassName="BILSwkInfoDataTable" msprop:Generator_TableVarName="tableBILSwkInfo" msprop:Generator_RowChangedName="BILSwkInfoRowChanged" msprop:Generator_TablePropName="BILSwkInfo" msprop:Generator_RowDeletingName="BILSwkInfoRowDeleting" msprop:Generator_RowChangingName="BILSwkInfoRowChanging" msprop:Generator_RowEvHandlerName="BILSwkInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="BILSwkInfoRowDeleted" msprop:Generator_RowClassName="BILSwkInfoRow" msprop:Generator_UserTableName="BILSwkInfo" msprop:Generator_RowEvArgName="BILSwkInfoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CorpNCode" msprop:Generator_ColumnVarNameInTable="columnCorpNCode" msprop:Generator_ColumnPropNameInRow="CorpNCode" msprop:Generator_ColumnPropNameInTable="CorpNCodeColumn" msprop:Generator_UserColumnName="CorpNCode" type="xs:string" />
+              <xs:element name="FiscalYearSt" msprop:Generator_ColumnVarNameInTable="columnFiscalYearSt" msprop:Generator_ColumnPropNameInRow="FiscalYearSt" msprop:Generator_ColumnPropNameInTable="FiscalYearStColumn" msprop:Generator_UserColumnName="FiscalYearSt" type="xs:string" />
+              <xs:element name="FinKbn" msdata:Caption="ItemID" msprop:Generator_ColumnVarNameInTable="columnFinKbn" msprop:Generator_ColumnPropNameInRow="FinKbn" msprop:Generator_ColumnPropNameInTable="FinKbnColumn" msprop:Generator_UserColumnName="FinKbn" type="xs:string" />
+              <xs:element name="BKmkNCode" msprop:Generator_ColumnVarNameInTable="columnBKmkNCode" msprop:Generator_ColumnPropNameInRow="BKmkNCode" msprop:Generator_ColumnPropNameInTable="BKmkNCodeColumn" msprop:Generator_UserColumnName="BKmkNCode" type="xs:string" />
+              <xs:element name="HojNCode" msprop:Generator_ColumnVarNameInTable="columnHojNCode" msprop:Generator_ColumnPropNameInRow="HojNCode" msprop:Generator_ColumnPropNameInTable="HojNCodeColumn" msprop:Generator_UserColumnName="HojNCode" type="xs:string" />
+              <xs:element name="PKmkNCode" msprop:Generator_ColumnVarNameInTable="columnPKmkNCode" msprop:Generator_ColumnPropNameInRow="PKmkNCode" msprop:Generator_ColumnPropNameInTable="PKmkNCodeColumn" msprop:Generator_UserColumnName="PKmkNCode" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BILBillNum" msprop:Generator_TableClassName="BILBillNumDataTable" msprop:Generator_TableVarName="tableBILBillNum" msprop:Generator_RowChangedName="BILBillNumRowChanged" msprop:Generator_TablePropName="BILBillNum" msprop:Generator_RowDeletingName="BILBillNumRowDeleting" msprop:Generator_RowChangingName="BILBillNumRowChanging" msprop:Generator_RowEvHandlerName="BILBillNumRowChangeEventHandler" msprop:Generator_RowDeletedName="BILBillNumRowDeleted" msprop:Generator_RowClassName="BILBillNumRow" msprop:Generator_UserTableName="BILBillNum" msprop:Generator_RowEvArgName="BILBillNumRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CorpNCode" msprop:Generator_ColumnVarNameInTable="columnCorpNCode" msprop:Generator_ColumnPropNameInRow="CorpNCode" msprop:Generator_ColumnPropNameInTable="CorpNCodeColumn" msprop:Generator_UserColumnName="CorpNCode" type="xs:string" />
+              <xs:element name="FiscalYearSt" msprop:Generator_ColumnVarNameInTable="columnFiscalYearSt" msprop:Generator_ColumnPropNameInRow="FiscalYearSt" msprop:Generator_ColumnPropNameInTable="FiscalYearStColumn" msprop:Generator_UserColumnName="FiscalYearSt" type="xs:string" />
+              <xs:element name="NCode" msdata:Caption="ItemID" msprop:Generator_ColumnVarNameInTable="columnNCode" msprop:Generator_ColumnPropNameInRow="NCode" msprop:Generator_ColumnPropNameInTable="NCodeColumn" msprop:Generator_UserColumnName="NCode" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BILFinMA" msprop:Generator_TableClassName="BILFinMADataTable" msprop:Generator_TableVarName="tableBILFinMA" msprop:Generator_RowChangedName="BILFinMARowChanged" msprop:Generator_TablePropName="BILFinMA" msprop:Generator_RowDeletingName="BILFinMARowDeleting" msprop:Generator_RowChangingName="BILFinMARowChanging" msprop:Generator_RowEvHandlerName="BILFinMARowChangeEventHandler" msprop:Generator_RowDeletedName="BILFinMARowDeleted" msprop:Generator_RowClassName="BILFinMARow" msprop:Generator_UserTableName="BILFinMA" msprop:Generator_RowEvArgName="BILFinMARowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CorpNCode" msprop:Generator_ColumnVarNameInTable="columnCorpNCode" msprop:Generator_ColumnPropNameInRow="CorpNCode" msprop:Generator_ColumnPropNameInTable="CorpNCodeColumn" msprop:Generator_UserColumnName="CorpNCode" type="xs:string" />
+              <xs:element name="FiscalYearSt" msprop:Generator_ColumnVarNameInTable="columnFiscalYearSt" msprop:Generator_ColumnPropNameInRow="FiscalYearSt" msprop:Generator_ColumnPropNameInTable="FiscalYearStColumn" msprop:Generator_UserColumnName="FiscalYearSt" type="xs:string" />
+              <xs:element name="EntNo" msdata:Caption="ItemID" msprop:Generator_ColumnVarNameInTable="columnEntNo" msprop:Generator_ColumnPropNameInRow="EntNo" msprop:Generator_ColumnPropNameInTable="EntNoColumn" msprop:Generator_UserColumnName="EntNo" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BILSwkIndex" msprop:Generator_TableClassName="BILSwkIndexDataTable" msprop:Generator_TableVarName="tableBILSwkIndex" msprop:Generator_RowChangedName="BILSwkIndexRowChanged" msprop:Generator_TablePropName="BILSwkIndex" msprop:Generator_RowDeletingName="BILSwkIndexRowDeleting" msprop:Generator_RowChangingName="BILSwkIndexRowChanging" msprop:Generator_RowEvHandlerName="BILSwkIndexRowChangeEventHandler" msprop:Generator_RowDeletedName="BILSwkIndexRowDeleted" msprop:Generator_RowClassName="BILSwkIndexRow" msprop:Generator_UserTableName="BILSwkIndex" msprop:Generator_RowEvArgName="BILSwkIndexRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CorpNCode" msprop:Generator_ColumnVarNameInTable="columnCorpNCode" msprop:Generator_ColumnPropNameInRow="CorpNCode" msprop:Generator_ColumnPropNameInTable="CorpNCodeColumn" msprop:Generator_UserColumnName="CorpNCode" type="xs:string" />
+              <xs:element name="FiscalYearSt" msprop:Generator_ColumnVarNameInTable="columnFiscalYearSt" msprop:Generator_ColumnPropNameInRow="FiscalYearSt" msprop:Generator_ColumnPropNameInTable="FiscalYearStColumn" msprop:Generator_UserColumnName="FiscalYearSt" type="xs:string" />
+              <xs:element name="DSeqNo" msdata:Caption="ItemID" msprop:Generator_ColumnVarNameInTable="columnDSeqNo" msprop:Generator_ColumnPropNameInRow="DSeqNo" msprop:Generator_ColumnPropNameInTable="DSeqNoColumn" msprop:Generator_UserColumnName="DSeqNo" type="xs:string" />
+              <xs:element name="SrchId" msdata:Caption="BKmkNCode" msprop:Generator_ColumnVarNameInTable="columnSrchId" msprop:Generator_ColumnPropNameInRow="SrchId" msprop:Generator_ColumnPropNameInTable="SrchIdColumn" msprop:Generator_UserColumnName="SrchId" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BILSwkAddHis" msprop:Generator_TableClassName="BILSwkAddHisDataTable" msprop:Generator_TableVarName="tableBILSwkAddHis" msprop:Generator_RowChangedName="BILSwkAddHisRowChanged" msprop:Generator_TablePropName="BILSwkAddHis" msprop:Generator_RowDeletingName="BILSwkAddHisRowDeleting" msprop:Generator_RowChangingName="BILSwkAddHisRowChanging" msprop:Generator_RowEvHandlerName="BILSwkAddHisRowChangeEventHandler" msprop:Generator_RowDeletedName="BILSwkAddHisRowDeleted" msprop:Generator_RowClassName="BILSwkAddHisRow" msprop:Generator_UserTableName="BILSwkAddHis" msprop:Generator_RowEvArgName="BILSwkAddHisRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CorpNCode" msprop:Generator_ColumnVarNameInTable="columnCorpNCode" msprop:Generator_ColumnPropNameInRow="CorpNCode" msprop:Generator_ColumnPropNameInTable="CorpNCodeColumn" msprop:Generator_UserColumnName="CorpNCode" type="xs:string" />
+              <xs:element name="FiscalYearSt" msprop:Generator_ColumnVarNameInTable="columnFiscalYearSt" msprop:Generator_ColumnPropNameInRow="FiscalYearSt" msprop:Generator_ColumnPropNameInTable="FiscalYearStColumn" msprop:Generator_UserColumnName="FiscalYearSt" type="xs:string" />
+              <xs:element name="SeqNo" msdata:Caption="ItemID" msprop:Generator_ColumnVarNameInTable="columnSeqNo" msprop:Generator_ColumnPropNameInRow="SeqNo" msprop:Generator_ColumnPropNameInTable="SeqNoColumn" msprop:Generator_UserColumnName="SeqNo" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BILSwkAddInfo2" msprop:Generator_TableClassName="BILSwkAddInfo2DataTable" msprop:Generator_TableVarName="tableBILSwkAddInfo2" msprop:Generator_RowChangedName="BILSwkAddInfo2RowChanged" msprop:Generator_TablePropName="BILSwkAddInfo2" msprop:Generator_RowDeletingName="BILSwkAddInfo2RowDeleting" msprop:Generator_RowChangingName="BILSwkAddInfo2RowChanging" msprop:Generator_RowEvHandlerName="BILSwkAddInfo2RowChangeEventHandler" msprop:Generator_RowDeletedName="BILSwkAddInfo2RowDeleted" msprop:Generator_RowClassName="BILSwkAddInfo2Row" msprop:Generator_UserTableName="BILSwkAddInfo2" msprop:Generator_RowEvArgName="BILSwkAddInfo2RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CorpNCode" msprop:Generator_ColumnVarNameInTable="columnCorpNCode" msprop:Generator_ColumnPropNameInRow="CorpNCode" msprop:Generator_ColumnPropNameInTable="CorpNCodeColumn" msprop:Generator_UserColumnName="CorpNCode" type="xs:string" />
+              <xs:element name="FiscalYearSt" msprop:Generator_ColumnVarNameInTable="columnFiscalYearSt" msprop:Generator_ColumnPropNameInRow="FiscalYearSt" msprop:Generator_ColumnPropNameInTable="FiscalYearStColumn" msprop:Generator_UserColumnName="FiscalYearSt" type="xs:string" />
+              <xs:element name="DSeqNo" msdata:Caption="ItemID" msprop:Generator_ColumnVarNameInTable="columnDSeqNo" msprop:Generator_ColumnPropNameInRow="DSeqNo" msprop:Generator_ColumnPropNameInTable="DSeqNoColumn" msprop:Generator_UserColumnName="DSeqNo" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BILSwkSpExec" msprop:Generator_TableClassName="BILSwkSpExecDataTable" msprop:Generator_TableVarName="tableBILSwkSpExec" msprop:Generator_RowChangedName="BILSwkSpExecRowChanged" msprop:Generator_TablePropName="BILSwkSpExec" msprop:Generator_RowDeletingName="BILSwkSpExecRowDeleting" msprop:Generator_RowChangingName="BILSwkSpExecRowChanging" msprop:Generator_RowEvHandlerName="BILSwkSpExecRowChangeEventHandler" msprop:Generator_RowDeletedName="BILSwkSpExecRowDeleted" msprop:Generator_RowClassName="BILSwkSpExecRow" msprop:Generator_UserTableName="BILSwkSpExec" msprop:Generator_RowEvArgName="BILSwkSpExecRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CorpNCode" msprop:Generator_ColumnVarNameInTable="columnCorpNCode" msprop:Generator_ColumnPropNameInRow="CorpNCode" msprop:Generator_ColumnPropNameInTable="CorpNCodeColumn" msprop:Generator_UserColumnName="CorpNCode" type="xs:string" />
+              <xs:element name="FiscalYearSt" msprop:Generator_ColumnVarNameInTable="columnFiscalYearSt" msprop:Generator_ColumnPropNameInRow="FiscalYearSt" msprop:Generator_ColumnPropNameInTable="FiscalYearStColumn" msprop:Generator_UserColumnName="FiscalYearSt" type="xs:string" />
+              <xs:element name="DSeqNo" msdata:Caption="ItemID" msprop:Generator_ColumnVarNameInTable="columnDSeqNo" msprop:Generator_ColumnPropNameInRow="DSeqNo" msprop:Generator_ColumnPropNameInTable="DSeqNoColumn" msprop:Generator_UserColumnName="DSeqNo" type="xs:string" />
+              <xs:element name="ExeCode" msprop:Generator_ColumnVarNameInTable="columnExeCode" msprop:Generator_ColumnPropNameInRow="ExeCode" msprop:Generator_ColumnPropNameInTable="ExeCodeColumn" msprop:Generator_UserColumnName="ExeCode" type="xs:string" />
+              <xs:element name="ExeNo" msprop:Generator_ColumnVarNameInTable="columnExeNo" msprop:Generator_ColumnPropNameInRow="ExeNo" msprop:Generator_ColumnPropNameInTable="ExeNoColumn" msprop:Generator_UserColumnName="ExeNo" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BILKmkFinInfo" msprop:Generator_TableClassName="BILKmkFinInfoDataTable" msprop:Generator_TableVarName="tableBILKmkFinInfo" msprop:Generator_RowChangedName="BILKmkFinInfoRowChanged" msprop:Generator_TablePropName="BILKmkFinInfo" msprop:Generator_RowDeletingName="BILKmkFinInfoRowDeleting" msprop:Generator_RowChangingName="BILKmkFinInfoRowChanging" msprop:Generator_RowEvHandlerName="BILKmkFinInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="BILKmkFinInfoRowDeleted" msprop:Generator_RowClassName="BILKmkFinInfoRow" msprop:Generator_UserTableName="BILKmkFinInfo" msprop:Generator_RowEvArgName="BILKmkFinInfoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CorpNCode" msprop:Generator_ColumnVarNameInTable="columnCorpNCode" msprop:Generator_ColumnPropNameInRow="CorpNCode" msprop:Generator_ColumnPropNameInTable="CorpNCodeColumn" msprop:Generator_UserColumnName="CorpNCode" type="xs:string" />
+              <xs:element name="FiscalYearSt" msprop:Generator_ColumnVarNameInTable="columnFiscalYearSt" msprop:Generator_ColumnPropNameInRow="FiscalYearSt" msprop:Generator_ColumnPropNameInTable="FiscalYearStColumn" msprop:Generator_UserColumnName="FiscalYearSt" type="xs:string" />
+              <xs:element name="FinKbn" msdata:Caption="ItemID" msprop:Generator_ColumnVarNameInTable="columnFinKbn" msprop:Generator_ColumnPropNameInRow="FinKbn" msprop:Generator_ColumnPropNameInTable="FinKbnColumn" msprop:Generator_UserColumnName="FinKbn" type="xs:string" />
+              <xs:element name="KmkNCode" msdata:Caption="ExeCode" msprop:Generator_ColumnVarNameInTable="columnKmkNCode" msprop:Generator_ColumnPropNameInRow="KmkNCode" msprop:Generator_ColumnPropNameInTable="KmkNCodeColumn" msprop:Generator_UserColumnName="KmkNCode" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="BILInfoKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BILInfo" />
+      <xs:field xpath="mstns:CorpNCode" />
+      <xs:field xpath="mstns:FiscalYearSt" />
+      <xs:field xpath="mstns:ItemID" />
+    </xs:unique>
+    <xs:unique name="BILSwkInfoKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BILSwkInfo" />
+      <xs:field xpath="mstns:CorpNCode" />
+      <xs:field xpath="mstns:FiscalYearSt" />
+      <xs:field xpath="mstns:FinKbn" />
+      <xs:field xpath="mstns:BKmkNCode" />
+      <xs:field xpath="mstns:HojNCode" />
+      <xs:field xpath="mstns:PKmkNCode" />
+    </xs:unique>
+    <xs:unique name="BILBillNum_BILInfoKey1" msdata:ConstraintName="BILInfoKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BILBillNum" />
+      <xs:field xpath="mstns:CorpNCode" />
+      <xs:field xpath="mstns:FiscalYearSt" />
+      <xs:field xpath="mstns:NCode" />
+    </xs:unique>
+    <xs:unique name="BILFinMA_BILInfoKey1" msdata:ConstraintName="BILInfoKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BILFinMA" />
+      <xs:field xpath="mstns:CorpNCode" />
+      <xs:field xpath="mstns:FiscalYearSt" />
+      <xs:field xpath="mstns:EntNo" />
+    </xs:unique>
+    <xs:unique name="Constraint11">
+      <xs:selector xpath=".//mstns:BILSwkIndex" />
+      <xs:field xpath="mstns:DSeqNo" />
+      <xs:field xpath="mstns:SrchId" />
+    </xs:unique>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BILSwkIndex" />
+      <xs:field xpath="mstns:CorpNCode" />
+    </xs:unique>
+    <xs:unique name="Constraint12">
+      <xs:selector xpath=".//mstns:BILSwkIndex" />
+      <xs:field xpath="mstns:FiscalYearSt" />
+    </xs:unique>
+    <xs:unique name="BILSwkAddHis_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BILSwkAddHis" />
+      <xs:field xpath="mstns:CorpNCode" />
+    </xs:unique>
+    <xs:unique name="BILSwkAddHis_Constraint12" msdata:ConstraintName="Constraint12">
+      <xs:selector xpath=".//mstns:BILSwkAddHis" />
+      <xs:field xpath="mstns:FiscalYearSt" />
+    </xs:unique>
+    <xs:unique name="Constraint2">
+      <xs:selector xpath=".//mstns:BILSwkAddHis" />
+      <xs:field xpath="mstns:SeqNo" />
+    </xs:unique>
+    <xs:unique name="BILSwkAddInfo2_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BILSwkAddInfo2" />
+      <xs:field xpath="mstns:CorpNCode" />
+    </xs:unique>
+    <xs:unique name="BILSwkAddInfo2_Constraint12" msdata:ConstraintName="Constraint12">
+      <xs:selector xpath=".//mstns:BILSwkAddInfo2" />
+      <xs:field xpath="mstns:FiscalYearSt" />
+    </xs:unique>
+    <xs:unique name="BILSwkAddInfo2_Constraint2" msdata:ConstraintName="Constraint2">
+      <xs:selector xpath=".//mstns:BILSwkAddInfo2" />
+      <xs:field xpath="mstns:DSeqNo" />
+    </xs:unique>
+    <xs:unique name="BILSwkSpExec_Constraint12" msdata:ConstraintName="Constraint12">
+      <xs:selector xpath=".//mstns:BILSwkSpExec" />
+      <xs:field xpath="mstns:FiscalYearSt" />
+    </xs:unique>
+    <xs:unique name="BILSwkSpExec_Constraint2" msdata:ConstraintName="Constraint2">
+      <xs:selector xpath=".//mstns:BILSwkSpExec" />
+      <xs:field xpath="mstns:DSeqNo" />
+    </xs:unique>
+    <xs:unique name="BILSwkSpExecKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BILSwkSpExec" />
+      <xs:field xpath="mstns:CorpNCode" />
+      <xs:field xpath="mstns:FiscalYearSt" />
+      <xs:field xpath="mstns:DSeqNo" />
+      <xs:field xpath="mstns:ExeCode" />
+      <xs:field xpath="mstns:ExeNo" />
+    </xs:unique>
+    <xs:unique name="BILKmkFinInfo_Constraint12" msdata:ConstraintName="Constraint12">
+      <xs:selector xpath=".//mstns:BILKmkFinInfo" />
+      <xs:field xpath="mstns:FiscalYearSt" />
+    </xs:unique>
+    <xs:unique name="BILKmkFinInfo_Constraint2" msdata:ConstraintName="Constraint2">
+      <xs:selector xpath=".//mstns:BILKmkFinInfo" />
+      <xs:field xpath="mstns:FinKbn" />
+    </xs:unique>
+    <xs:unique name="BILKmkFinInfo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BILKmkFinInfo" />
+      <xs:field xpath="mstns:CorpNCode" />
+      <xs:field xpath="mstns:FiscalYearSt" />
+      <xs:field xpath="mstns:FinKbn" />
+      <xs:field xpath="mstns:KmkNCode" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
