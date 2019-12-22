@@ -1,0 +1,2631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AppModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="AppModelStoreContainer">
+          <EntitySet Name="ct70" EntityType="AppModel.Store.ct70" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ct71" EntityType="AppModel.Store.ct71" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ct81" EntityType="AppModel.Store.ct81" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="dmct" EntityType="AppModel.Store.dmct" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="dmkh" EntityType="AppModel.Store.dmkh" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="dmvt" EntityType="AppModel.Store.dmvt" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ph71" EntityType="AppModel.Store.ph71" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ph81" EntityType="AppModel.Store.ph81" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_ct71_ph71" Association="AppModel.Store.FK_ct71_ph71">
+            <End Role="ph71" EntitySet="ph71" />
+            <End Role="ct71" EntitySet="ct71" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ct81_ph81" Association="AppModel.Store.FK_ct81_ph81">
+            <End Role="ph81" EntitySet="ph81" />
+            <End Role="ct81" EntitySet="ct81" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ct70">
+          <Key>
+            <PropertyRef Name="stt_rec" />
+            <PropertyRef Name="stt_rec0" />
+          </Key>
+          <Property Name="stt_rec" Type="char" Nullable="false" MaxLength="13" />
+          <Property Name="stt_rec0" Type="char" Nullable="false" MaxLength="3" />
+          <Property Name="ma_dvcs" Type="char" MaxLength="8" />
+          <Property Name="ma_ct" Type="char" MaxLength="3" />
+          <Property Name="loai_ct" Type="char" MaxLength="2" />
+          <Property Name="ma_gd" Type="char" MaxLength="2" />
+          <Property Name="ma_nk" Type="char" MaxLength="8" />
+          <Property Name="nxt" Type="tinyint" />
+          <Property Name="ct_dc" Type="tinyint" />
+          <Property Name="pn_gia_tb" Type="bit" />
+          <Property Name="px_gia_dd" Type="bit" />
+          <Property Name="ngay_lct" Type="smalldatetime" />
+          <Property Name="ngay_ct" Type="smalldatetime" />
+          <Property Name="so_ct" Type="char" MaxLength="12" />
+          <Property Name="so_seri" Type="char" MaxLength="12" />
+          <Property Name="so_lo" Type="char" MaxLength="9" />
+          <Property Name="ngay_lo" Type="smalldatetime" />
+          <Property Name="ma_kh" Type="char" MaxLength="8" />
+          <Property Name="ma_khon" Type="char" MaxLength="8" />
+          <Property Name="ma_kho" Type="char" MaxLength="8" />
+          <Property Name="ma_vi_trin" Type="char" MaxLength="8" />
+          <Property Name="ma_vi_tri" Type="char" MaxLength="8" />
+          <Property Name="ong_ba" Type="nchar" MaxLength="24" />
+          <Property Name="dien_giai" Type="nvarchar" MaxLength="128" />
+          <Property Name="ma_vv" Type="char" MaxLength="24" />
+          <Property Name="ma_sp" Type="char" MaxLength="24" />
+          <Property Name="ma_bp" Type="char" MaxLength="8" />
+          <Property Name="so_lsx" Type="char" MaxLength="24" />
+          <Property Name="ma_hd" Type="char" MaxLength="24" />
+          <Property Name="ma_ku" Type="char" MaxLength="24" />
+          <Property Name="ma_phi" Type="char" MaxLength="24" />
+          <Property Name="so_dh2" Type="char" MaxLength="24" />
+          <Property Name="so_dh3" Type="char" MaxLength="24" />
+          <Property Name="ma_nvbh" Type="char" MaxLength="8" />
+          <Property Name="ma_nv" Type="char" MaxLength="8" />
+          <Property Name="ma_nx" Type="char" MaxLength="24" />
+          <Property Name="tk_du" Type="char" MaxLength="24" />
+          <Property Name="ma_nt" Type="char" MaxLength="3" />
+          <Property Name="ty_gia" Type="numeric" Precision="24" Scale="12" />
+          <Property Name="ma_vt" Type="char" MaxLength="24" />
+          <Property Name="ma_lo" Type="char" MaxLength="24" />
+          <Property Name="dvt1" Type="nchar" MaxLength="10" />
+          <Property Name="sl_nhap1" Type="numeric" Scale="3" />
+          <Property Name="sl_xuat1" Type="numeric" Scale="3" />
+          <Property Name="he_so1" Type="numeric" Precision="8" Scale="3" />
+          <Property Name="gia_nt1" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="gia1" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="gia01" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="gia_nt01" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="gia21" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="gia_nt21" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="tk_vt" Type="char" MaxLength="24" />
+          <Property Name="tk_gv" Type="char" MaxLength="24" />
+          <Property Name="tk_dt" Type="char" MaxLength="24" />
+          <Property Name="sl_nhap" Type="numeric" Precision="13" Scale="3" />
+          <Property Name="sl_xuat" Type="numeric" Precision="13" Scale="3" />
+          <Property Name="gia_nt" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="gia" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="tien_nt_n" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="tien_nt_x" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="tien_nhap" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="tien_xuat" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="gia_nt0" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="gia0" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="tien_nt0" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="tien0" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp_vc" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp_vc_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp_bh" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp_bh_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp_khac" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp_khac_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="thue_suat_nk" Type="numeric" Precision="5" Scale="2" />
+          <Property Name="nk_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="nk" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="tk_thue_nk" Type="char" MaxLength="24" />
+          <Property Name="thue_suat_ttdb" Type="numeric" Precision="5" Scale="2" />
+          <Property Name="ttdb_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="ttdb" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="tk_thue_ttdb" Type="char" MaxLength="24" />
+          <Property Name="gia_nt2" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="gia2" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="tien_nt2" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="tien2" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="ma_tt" Type="char" MaxLength="3" />
+          <Property Name="cp_thue_yn" Type="bit" />
+          <Property Name="thue_suat" Type="numeric" Precision="5" Scale="2" />
+          <Property Name="thue_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="thue" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="tk_thue_no" Type="char" MaxLength="24" />
+          <Property Name="tk_thue_co" Type="char" MaxLength="24" />
+          <Property Name="ck_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="ck" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="tk_ck" Type="char" MaxLength="24" />
+          <Property Name="stt_rec_pn" Type="char" MaxLength="13" />
+          <Property Name="stt_rec0pn" Type="char" MaxLength="3" />
+          <Property Name="stt_rec_px" Type="char" MaxLength="13" />
+          <Property Name="stt_rec0px" Type="char" MaxLength="3" />
+          <Property Name="stt_rec_dc" Type="char" MaxLength="13" />
+          <Property Name="stt_rec_yc" Type="char" MaxLength="13" />
+          <Property Name="stt_rec0yc" Type="char" MaxLength="3" />
+          <Property Name="ngay_ct0" Type="smalldatetime" />
+          <Property Name="so_ct0" Type="char" MaxLength="12" />
+          <Property Name="so_seri0" Type="char" MaxLength="12" />
+          <Property Name="nam" Type="numeric" Precision="4" />
+          <Property Name="ky" Type="numeric" Precision="2" />
+          <Property Name="line_nbr" Type="numeric" Precision="5" />
+          <Property Name="status" Type="char" MaxLength="1" />
+          <Property Name="datetime0" Type="datetime" />
+          <Property Name="datetime2" Type="datetime" />
+          <Property Name="user_id0" Type="numeric" Precision="3" />
+          <Property Name="user_id2" Type="numeric" Precision="3" />
+          <Property Name="ma_td1" Type="char" MaxLength="24" />
+          <Property Name="ma_td2" Type="char" MaxLength="24" />
+          <Property Name="ma_td3" Type="char" MaxLength="24" />
+          <Property Name="sl_td1" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="sl_td2" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="sl_td3" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="ngay_td1" Type="smalldatetime" />
+          <Property Name="ngay_td2" Type="smalldatetime" />
+          <Property Name="ngay_td3" Type="smalldatetime" />
+          <Property Name="gc_td1" Type="nchar" MaxLength="24" />
+          <Property Name="gc_td2" Type="nchar" MaxLength="24" />
+          <Property Name="gc_td3" Type="nchar" MaxLength="24" />
+          <Property Name="s1" Type="char" MaxLength="24" />
+          <Property Name="s2" Type="char" MaxLength="24" />
+          <Property Name="s3" Type="char" MaxLength="24" />
+          <Property Name="s4" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s5" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s6" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s7" Type="smalldatetime" />
+          <Property Name="s8" Type="smalldatetime" />
+          <Property Name="s9" Type="smalldatetime" />
+          <Property Name="is_giaban_co_vat" Type="bit" />
+          <Property Name="tl_ck" Type="numeric" Precision="6" Scale="2" />
+          <Property Name="ma_httt" Type="char" MaxLength="8" />
+          <Property Name="ma_kho_kg" Type="char" MaxLength="8" />
+          <Property Name="is_ck_co_vat" Type="bit" />
+        </EntityType>
+        <EntityType Name="ct71">
+          <Key>
+            <PropertyRef Name="stt_rec" />
+            <PropertyRef Name="stt_rec0" />
+          </Key>
+          <Property Name="stt_rec" Type="char" Nullable="false" MaxLength="13" />
+          <Property Name="stt_rec0" Type="char" Nullable="false" MaxLength="3" />
+          <Property Name="ma_ct" Type="char" MaxLength="3" />
+          <Property Name="ngay_ct" Type="smalldatetime" />
+          <Property Name="so_ct" Type="char" MaxLength="12" />
+          <Property Name="ma_vt" Type="char" MaxLength="24" />
+          <Property Name="ma_sp" Type="char" MaxLength="24" />
+          <Property Name="ma_bp" Type="char" MaxLength="8" />
+          <Property Name="so_lsx" Type="char" MaxLength="24" />
+          <Property Name="dvt" Type="nchar" MaxLength="10" />
+          <Property Name="he_so" Type="numeric" Precision="13" Scale="3" />
+          <Property Name="ma_kho" Type="char" MaxLength="8" />
+          <Property Name="ma_vi_tri" Type="char" MaxLength="8" />
+          <Property Name="ma_lo" Type="char" MaxLength="24" />
+          <Property Name="ma_vv" Type="char" MaxLength="24" />
+          <Property Name="tk_vt" Type="char" MaxLength="24" />
+          <Property Name="so_luong" Type="numeric" Precision="12" Scale="3" />
+          <Property Name="gia_nt" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="gia" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="gia_nt0" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="gia0" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="tien_nt" Type="numeric" Precision="15" Scale="2" />
+          <Property Name="tien" Type="numeric" Precision="15" Scale="2" />
+          <Property Name="ma_thue" Type="char" MaxLength="8" />
+          <Property Name="tk_thue" Type="char" MaxLength="24" />
+          <Property Name="thue_suat" Type="numeric" Precision="7" Scale="2" />
+          <Property Name="thue" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="thue_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="tt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="tt_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="xstatus" Type="char" MaxLength="1" />
+          <Property Name="xaction" Type="char" MaxLength="1" />
+          <Property Name="tien0" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="tien_nt0" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="ma_thue_nk" Type="char" MaxLength="8" />
+          <Property Name="thue_suat_nk" Type="numeric" Precision="5" Scale="2" />
+          <Property Name="tk_thue_nk" Type="char" MaxLength="24" />
+          <Property Name="nk" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="nk_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="ma_thue_ttdb" Type="char" MaxLength="8" />
+          <Property Name="thue_suat_ttdb" Type="numeric" Precision="5" Scale="2" />
+          <Property Name="tk_thue_ttdb" Type="char" MaxLength="24" />
+          <Property Name="ttdb" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="ttdb_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp_bh" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp_bh_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp_vc" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp_vc_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp_khac" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp_khac_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="stt_rec_ct" Type="char" MaxLength="13" />
+          <Property Name="stt_rec0ct" Type="char" MaxLength="3" />
+          <Property Name="stt_rec_dh" Type="char" MaxLength="13" />
+          <Property Name="stt_rec0dh" Type="char" MaxLength="3" />
+          <Property Name="stt_rec_pn" Type="char" MaxLength="13" />
+          <Property Name="stt_rec0pn" Type="char" MaxLength="3" />
+          <Property Name="tien_hang" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="tien_hang_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="line_nbr" Type="numeric" Precision="5" />
+          <Property Name="ma_hd" Type="char" MaxLength="24" />
+          <Property Name="ma_ku" Type="char" MaxLength="24" />
+          <Property Name="ma_phi" Type="char" MaxLength="24" />
+          <Property Name="so_dh_i" Type="char" MaxLength="24" />
+          <Property Name="ma_td1" Type="char" MaxLength="24" />
+          <Property Name="ma_td2" Type="char" MaxLength="24" />
+          <Property Name="ma_td3" Type="char" MaxLength="24" />
+          <Property Name="sl_td1" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="sl_td2" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="sl_td3" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="ngay_td1" Type="smalldatetime" />
+          <Property Name="ngay_td2" Type="smalldatetime" />
+          <Property Name="ngay_td3" Type="smalldatetime" />
+          <Property Name="gc_td1" Type="nchar" MaxLength="24" />
+          <Property Name="gc_td2" Type="nchar" MaxLength="1" />
+          <Property Name="gc_td3" Type="nchar" MaxLength="1" />
+          <Property Name="s1" Type="char" MaxLength="24" />
+          <Property Name="s2" Type="char" MaxLength="24" />
+          <Property Name="s3" Type="char" MaxLength="24" />
+          <Property Name="s4" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s5" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s6" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s7" Type="smalldatetime" />
+          <Property Name="s8" Type="smalldatetime" />
+          <Property Name="s9" Type="smalldatetime" />
+          <Property Name="ma_kho_kg" Type="char" MaxLength="8" />
+        </EntityType>
+        <EntityType Name="ct81">
+          <Key>
+            <PropertyRef Name="stt_rec" />
+            <PropertyRef Name="stt_rec0" />
+          </Key>
+          <Property Name="stt_rec" Type="char" Nullable="false" MaxLength="13" />
+          <Property Name="stt_rec0" Type="char" Nullable="false" MaxLength="3" />
+          <Property Name="ma_ct" Type="char" MaxLength="3" />
+          <Property Name="ngay_ct" Type="smalldatetime" />
+          <Property Name="so_ct" Type="char" MaxLength="12" />
+          <Property Name="ma_vt" Type="char" MaxLength="24" />
+          <Property Name="km_yn" Type="tinyint" />
+          <Property Name="ma_sp" Type="char" MaxLength="24" />
+          <Property Name="ma_bp" Type="char" MaxLength="8" />
+          <Property Name="so_lsx" Type="char" MaxLength="24" />
+          <Property Name="dvt" Type="nchar" MaxLength="10" />
+          <Property Name="he_so" Type="numeric" Precision="13" Scale="3" />
+          <Property Name="ma_kho" Type="char" MaxLength="8" />
+          <Property Name="ma_vi_tri" Type="char" MaxLength="8" />
+          <Property Name="ma_lo" Type="char" MaxLength="24" />
+          <Property Name="ma_vv" Type="char" MaxLength="24" />
+          <Property Name="tk_vt" Type="char" MaxLength="24" />
+          <Property Name="so_luong" Type="numeric" Precision="12" Scale="3" />
+          <Property Name="gia_nt" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="gia" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="gia_nt2" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="gia2" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="tien_nt" Type="numeric" Precision="15" Scale="2" />
+          <Property Name="tien" Type="numeric" Precision="15" Scale="2" />
+          <Property Name="thue" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="thue_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="tt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="tt_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="xstatus" Type="char" MaxLength="1" />
+          <Property Name="xaction" Type="char" MaxLength="1" />
+          <Property Name="tien2" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="tien_nt2" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp_bh" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp_bh_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp_vc" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp_vc_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp_khac" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp_khac_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="cp_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="stt_rec_ct" Type="char" MaxLength="13" />
+          <Property Name="stt_rec0ct" Type="char" MaxLength="3" />
+          <Property Name="gia_ban0" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="gia_ban_nt0" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="gia_ban" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="gia_ban_nt" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="gia_ck" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="gia_ck_nt" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="ck" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="ck_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="sl_dh" Type="numeric" Precision="14" Scale="3" />
+          <Property Name="sl_xuat" Type="numeric" Precision="14" Scale="3" />
+          <Property Name="sl_giao" Type="numeric" Precision="14" Scale="3" />
+          <Property Name="stt_rec_dh" Type="char" MaxLength="13" />
+          <Property Name="stt_rec0dh" Type="char" MaxLength="3" />
+          <Property Name="stt_rec_px" Type="char" MaxLength="13" />
+          <Property Name="stt_rec0px" Type="char" MaxLength="3" />
+          <Property Name="stt_rec_gh" Type="char" MaxLength="13" />
+          <Property Name="stt_rec0gh" Type="char" MaxLength="3" />
+          <Property Name="stt_rec_pn" Type="char" MaxLength="13" />
+          <Property Name="stt_rec0pn" Type="char" MaxLength="3" />
+          <Property Name="tk_gv" Type="char" MaxLength="24" />
+          <Property Name="tk_dt" Type="char" MaxLength="24" />
+          <Property Name="tk_ck" Type="char" MaxLength="24" />
+          <Property Name="tk_cpbh" Type="char" MaxLength="24" />
+          <Property Name="px_gia_dd" Type="bit" />
+          <Property Name="ma_nvbh_i" Type="char" MaxLength="8" />
+          <Property Name="line_nbr" Type="numeric" Precision="5" />
+          <Property Name="ma_hd" Type="char" MaxLength="24" />
+          <Property Name="ma_ku" Type="char" MaxLength="24" />
+          <Property Name="ma_phi" Type="char" MaxLength="24" />
+          <Property Name="so_dh_i" Type="char" MaxLength="24" />
+          <Property Name="ma_td1" Type="char" MaxLength="24" />
+          <Property Name="ma_td2" Type="char" MaxLength="24" />
+          <Property Name="ma_td3" Type="char" MaxLength="24" />
+          <Property Name="sl_td1" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="sl_td2" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="sl_td3" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="ngay_td1" Type="smalldatetime" />
+          <Property Name="ngay_td2" Type="smalldatetime" />
+          <Property Name="ngay_td3" Type="smalldatetime" />
+          <Property Name="gc_td1" Type="nchar" MaxLength="24" />
+          <Property Name="gc_td2" Type="nchar" MaxLength="1" />
+          <Property Name="gc_td3" Type="nchar" MaxLength="1" />
+          <Property Name="s1" Type="char" MaxLength="24" />
+          <Property Name="s2" Type="char" MaxLength="24" />
+          <Property Name="s3" Type="char" MaxLength="24" />
+          <Property Name="s4" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s5" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s6" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s7" Type="smalldatetime" />
+          <Property Name="s8" Type="smalldatetime" />
+          <Property Name="s9" Type="smalldatetime" />
+          <Property Name="is_giaban_co_vat" Type="bit" />
+          <Property Name="tl_ck" Type="numeric" Precision="6" Scale="2" />
+          <Property Name="is_ck_co_vat" Type="bit" />
+          <Property Name="ma_thue" Type="varchar" MaxLength="8" />
+          <Property Name="thue_suat" Type="numeric" Precision="7" Scale="2" />
+          <Property Name="tk_thue" Type="varchar" MaxLength="24" />
+        </EntityType>
+        <EntityType Name="dmct">
+          <Key>
+            <PropertyRef Name="ma_ct" />
+          </Key>
+          <Property Name="ma_phan_he" Type="char" MaxLength="2" />
+          <Property Name="ma_ct" Type="char" Nullable="false" MaxLength="3" />
+          <Property Name="ten_ct" Type="nvarchar" MaxLength="128" />
+          <Property Name="ten_ct2" Type="nvarchar" MaxLength="128" />
+          <Property Name="ma_ct_me" Type="char" MaxLength="3" />
+          <Property Name="so_ct" Type="numeric" Precision="12" />
+          <Property Name="ma_nt" Type="char" MaxLength="3" />
+          <Property Name="ma_ct_in" Type="char" MaxLength="3" />
+          <Property Name="so_lien" Type="tinyint" />
+          <Property Name="tieu_de_ct" Type="nvarchar" MaxLength="128" />
+          <Property Name="tieu_de_ct2" Type="nvarchar" MaxLength="128" />
+          <Property Name="stt_ct_nkc" Type="tinyint" />
+          <Property Name="stt_ctntxt" Type="tinyint" />
+          <Property Name="ct_nxt" Type="tinyint" />
+          <Property Name="m_ctdbf" Type="char" MaxLength="6" />
+          <Property Name="m_phdbf" Type="char" MaxLength="6" />
+          <Property Name="post_type" Type="tinyint" />
+          <Property Name="dk_ctgs" Type="char" MaxLength="10" />
+          <Property Name="stt" Type="tinyint" />
+          <Property Name="max_row" Type="tinyint" />
+          <Property Name="v_nbr_blank_yn" Type="bit" />
+          <Property Name="v_nbr_unit_yn" Type="bit" />
+          <Property Name="v_nbr_user_yn" Type="bit" />
+          <Property Name="v_nbr_auto_yn" Type="bit" />
+          <Property Name="v_nbr_fields" Type="char" MaxLength="48" />
+          <Property Name="m_status" Type="char" MaxLength="1" />
+          <Property Name="m_ma_nk" Type="char" MaxLength="3" />
+          <Property Name="m_ma_gd" Type="char" MaxLength="2" />
+          <Property Name="m_loai_ct" Type="char" MaxLength="2" />
+          <Property Name="m_ma_td1" Type="tinyint" />
+          <Property Name="m_ma_td2" Type="tinyint" />
+          <Property Name="m_ma_td3" Type="tinyint" />
+          <Property Name="m_sl_ct0" Type="tinyint" />
+          <Property Name="m_trung_so" Type="numeric" Precision="2" />
+          <Property Name="m_loc_nsd" Type="tinyint" />
+          <Property Name="m_ong_ba" Type="tinyint" />
+          <Property Name="m_ngay_ct" Type="tinyint" />
+          <Property Name="m_phdbfs" Type="char" MaxLength="24" />
+          <Property Name="m_ctdbfs" Type="char" MaxLength="24" />
+          <Property Name="post_vv" Type="tinyint" />
+          <Property Name="post_sp" Type="tinyint" />
+          <Property Name="post_bp" Type="tinyint" />
+          <Property Name="post_hd" Type="tinyint" />
+          <Property Name="post_ku" Type="tinyint" />
+          <Property Name="post_phi" Type="tinyint" />
+          <Property Name="post_lsx" Type="tinyint" />
+          <Property Name="post_td1" Type="tinyint" />
+          <Property Name="post_td2" Type="tinyint" />
+          <Property Name="post_td3" Type="tinyint" />
+          <Property Name="voucher_yn" Type="tinyint" />
+          <Property Name="fs_post" Type="char" MaxLength="32" />
+          <Property Name="xstatus" Type="char" MaxLength="1" />
+          <Property Name="xgl" Type="bit" />
+          <Property Name="xin" Type="bit" />
+          <Property Name="xin_type" Type="char" MaxLength="1" />
+          <Property Name="xin_p_update" Type="char" MaxLength="1" />
+          <Property Name="status" Type="char" MaxLength="1" />
+          <Property Name="datetime0" Type="datetime" />
+          <Property Name="datetime2" Type="datetime" />
+          <Property Name="user_id0" Type="numeric" Precision="3" />
+          <Property Name="user_id2" Type="numeric" Precision="3" />
+          <Property Name="ma_td1" Type="char" MaxLength="24" />
+          <Property Name="ma_td2" Type="char" MaxLength="24" />
+          <Property Name="ma_td3" Type="char" MaxLength="24" />
+          <Property Name="sl_td1" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="sl_td2" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="sl_td3" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="ngay_td1" Type="smalldatetime" />
+          <Property Name="ngay_td2" Type="smalldatetime" />
+          <Property Name="ngay_td3" Type="smalldatetime" />
+          <Property Name="gc_td1" Type="nchar" MaxLength="128" />
+          <Property Name="gc_td2" Type="nchar" MaxLength="128" />
+          <Property Name="gc_td3" Type="nchar" MaxLength="128" />
+          <Property Name="s1" Type="char" MaxLength="24" />
+          <Property Name="s2" Type="char" MaxLength="24" />
+          <Property Name="s3" Type="char" MaxLength="24" />
+          <Property Name="s4" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s5" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s6" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s7" Type="smalldatetime" />
+          <Property Name="s8" Type="smalldatetime" />
+          <Property Name="s9" Type="smalldatetime" />
+        </EntityType>
+        <EntityType Name="dmkh">
+          <Key>
+            <PropertyRef Name="ma_kh" />
+          </Key>
+          <Property Name="ma_kh" Type="char" Nullable="false" MaxLength="8" />
+          <Property Name="ten_kh" Type="nvarchar" MaxLength="128" />
+          <Property Name="ten_kh2" Type="nvarchar" MaxLength="128" />
+          <Property Name="kh_yn" Type="bit" />
+          <Property Name="cc_yn" Type="bit" />
+          <Property Name="nv_yn" Type="bit" />
+          <Property Name="ma_so_thue" Type="char" MaxLength="18" />
+          <Property Name="dia_chi" Type="nvarchar" MaxLength="128" />
+          <Property Name="dien_thoai" Type="char" MaxLength="32" />
+          <Property Name="fax" Type="char" MaxLength="32" />
+          <Property Name="e_mail" Type="char" MaxLength="48" />
+          <Property Name="home_page" Type="char" MaxLength="48" />
+          <Property Name="doi_tac" Type="nvarchar" MaxLength="128" />
+          <Property Name="ong_ba" Type="nchar" MaxLength="24" />
+          <Property Name="ma_nvbh" Type="char" MaxLength="8" />
+          <Property Name="ngan_hang" Type="nchar" MaxLength="128" />
+          <Property Name="tk_nh" Type="char" MaxLength="24" />
+          <Property Name="tinh_thanh" Type="nchar" MaxLength="24" />
+          <Property Name="ghi_chu" Type="ntext" />
+          <Property Name="ma_tt" Type="char" MaxLength="2" />
+          <Property Name="tk" Type="char" MaxLength="24" />
+          <Property Name="nh_kh1" Type="char" MaxLength="8" />
+          <Property Name="nh_kh2" Type="char" MaxLength="8" />
+          <Property Name="nh_kh3" Type="char" MaxLength="8" />
+          <Property Name="nh_kh9" Type="char" MaxLength="8" />
+          <Property Name="du_nt13" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="du13" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_tien_cn" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_tien_hd" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="ngay_gh" Type="smalldatetime" />
+          <Property Name="status" Type="char" MaxLength="1" />
+          <Property Name="datetime0" Type="datetime" />
+          <Property Name="datetime2" Type="datetime" />
+          <Property Name="user_id0" Type="numeric" Precision="3" />
+          <Property Name="user_id2" Type="numeric" Precision="3" />
+          <Property Name="ma_td1" Type="char" MaxLength="24" />
+          <Property Name="ma_td2" Type="char" MaxLength="24" />
+          <Property Name="ma_td3" Type="char" MaxLength="24" />
+          <Property Name="sl_td1" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="sl_td2" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="sl_td3" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="ngay_td1" Type="smalldatetime" />
+          <Property Name="ngay_td2" Type="smalldatetime" />
+          <Property Name="ngay_td3" Type="smalldatetime" />
+          <Property Name="gc_td1" Type="nchar" MaxLength="128" />
+          <Property Name="gc_td2" Type="nchar" MaxLength="128" />
+          <Property Name="gc_td3" Type="nchar" MaxLength="128" />
+          <Property Name="s1" Type="char" MaxLength="24" />
+          <Property Name="s2" Type="char" MaxLength="24" />
+          <Property Name="s3" Type="char" MaxLength="24" />
+          <Property Name="s4" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s5" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s6" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s7" Type="smalldatetime" />
+          <Property Name="s8" Type="smalldatetime" />
+          <Property Name="s9" Type="smalldatetime" />
+        </EntityType>
+        <EntityType Name="dmvt">
+          <Key>
+            <PropertyRef Name="ma_vt" />
+          </Key>
+          <Property Name="ma_vt" Type="char" Nullable="false" MaxLength="24" />
+          <Property Name="ma_vt2" Type="char" MaxLength="24" />
+          <Property Name="ten_vt" Type="nvarchar" MaxLength="128" />
+          <Property Name="ten_vt2" Type="nvarchar" MaxLength="128" />
+          <Property Name="dvt" Type="nchar" MaxLength="10" />
+          <Property Name="nhieu_dvt" Type="bit" />
+          <Property Name="dvt2" Type="nchar" MaxLength="10" />
+          <Property Name="dvt3" Type="nchar" MaxLength="10" />
+          <Property Name="vt_ton_kho" Type="bit" />
+          <Property Name="gia_ton" Type="tinyint" />
+          <Property Name="loai_vt" Type="char" MaxLength="2" />
+          <Property Name="nh_vt1" Type="char" MaxLength="24" />
+          <Property Name="nh_vt2" Type="char" MaxLength="24" />
+          <Property Name="nh_vt3" Type="char" MaxLength="24" />
+          <Property Name="nh_vt9" Type="char" MaxLength="24" />
+          <Property Name="abc_code" Type="char" MaxLength="1" />
+          <Property Name="nguon" Type="numeric" Precision="1" />
+          <Property Name="lo_yn" Type="bit" />
+          <Property Name="ma_kho" Type="char" MaxLength="8" />
+          <Property Name="ma_vi_tri" Type="char" MaxLength="8" />
+          <Property Name="ma_thue" Type="char" MaxLength="8" />
+          <Property Name="ma_thue_nk" Type="char" MaxLength="8" />
+          <Property Name="kk_yn" Type="bit" />
+          <Property Name="sl_min" Type="numeric" Precision="12" Scale="3" />
+          <Property Name="sl_max" Type="numeric" Precision="12" Scale="3" />
+          <Property Name="tk_vt" Type="char" MaxLength="24" />
+          <Property Name="sua_tk_vt" Type="bit" />
+          <Property Name="tk_gv" Type="char" MaxLength="24" />
+          <Property Name="tk_dt" Type="char" MaxLength="24" />
+          <Property Name="tk_dtnb" Type="char" MaxLength="24" />
+          <Property Name="tk_tl" Type="char" MaxLength="24" />
+          <Property Name="tk_dl" Type="char" MaxLength="24" />
+          <Property Name="tk_spdd" Type="char" MaxLength="24" />
+          <Property Name="tk_cl_vt" Type="char" MaxLength="24" />
+          <Property Name="tk_ck" Type="char" MaxLength="24" />
+          <Property Name="tk_cpbh" Type="char" MaxLength="24" />
+          <Property Name="kieu_lo" Type="numeric" Precision="1" />
+          <Property Name="cach_xuat" Type="numeric" Precision="1" />
+          <Property Name="so_ngay_sp" Type="numeric" Precision="5" />
+          <Property Name="so_ngay_bh" Type="numeric" Precision="5" />
+          <Property Name="ong_ba" Type="nchar" MaxLength="24" />
+          <Property Name="ma_kh0" Type="char" MaxLength="8" />
+          <Property Name="ma_kh2" Type="char" MaxLength="8" />
+          <Property Name="ma_kh" Type="char" MaxLength="8" />
+          <Property Name="height" Type="numeric" Precision="13" Scale="3" />
+          <Property Name="length" Type="numeric" Precision="13" Scale="3" />
+          <Property Name="volume" Type="numeric" Precision="13" Scale="3" />
+          <Property Name="weight" Type="numeric" Precision="13" Scale="3" />
+          <Property Name="width" Type="numeric" Precision="13" Scale="3" />
+          <Property Name="density" Type="numeric" Precision="13" Scale="3" />
+          <Property Name="depth" Type="numeric" Precision="13" Scale="3" />
+          <Property Name="diameter" Type="numeric" Precision="13" Scale="3" />
+          <Property Name="gauge" Type="numeric" Precision="13" Scale="3" />
+          <Property Name="height0" Type="numeric" Precision="13" Scale="3" />
+          <Property Name="length0" Type="numeric" Precision="13" Scale="3" />
+          <Property Name="volume0" Type="numeric" Precision="13" Scale="3" />
+          <Property Name="weight0" Type="numeric" Precision="13" Scale="3" />
+          <Property Name="width0" Type="numeric" Precision="13" Scale="3" />
+          <Property Name="xsize" Type="nchar" MaxLength="64" />
+          <Property Name="xstyle" Type="nchar" MaxLength="64" />
+          <Property Name="xcolor" Type="nchar" MaxLength="64" />
+          <Property Name="weight2" Type="numeric" Precision="13" Scale="3" />
+          <Property Name="dvtheight" Type="nchar" MaxLength="10" />
+          <Property Name="dvtlength" Type="nchar" MaxLength="10" />
+          <Property Name="dvtvolume" Type="nchar" MaxLength="10" />
+          <Property Name="dvtweight" Type="nchar" MaxLength="10" />
+          <Property Name="dvtwidth" Type="nchar" MaxLength="10" />
+          <Property Name="dvtdensity" Type="nchar" MaxLength="10" />
+          <Property Name="dvtdepth" Type="nchar" MaxLength="10" />
+          <Property Name="dvtdiameter" Type="nchar" MaxLength="10" />
+          <Property Name="dvtgauge" Type="nchar" MaxLength="10" />
+          <Property Name="dvtheight0" Type="nchar" MaxLength="10" />
+          <Property Name="dvtlength0" Type="nchar" MaxLength="10" />
+          <Property Name="dvtvolume0" Type="nchar" MaxLength="10" />
+          <Property Name="dvtweight0" Type="nchar" MaxLength="10" />
+          <Property Name="dvtwidth0" Type="nchar" MaxLength="10" />
+          <Property Name="dvtweight2" Type="nchar" MaxLength="10" />
+          <Property Name="packs" Type="numeric" Precision="13" Scale="3" />
+          <Property Name="dvtpacks" Type="nchar" MaxLength="10" />
+          <Property Name="pack_size" Type="nchar" MaxLength="24" />
+          <Property Name="nuoc_sx" Type="nchar" MaxLength="24" />
+          <Property Name="tg_th" Type="numeric" Precision="3" />
+          <Property Name="sl_lo_chuan" Type="numeric" Precision="13" Scale="3" />
+          <Property Name="dvttg_th" Type="nchar" MaxLength="10" />
+          <Property Name="dvtsl_lo_chuan" Type="nchar" MaxLength="10" />
+          <Property Name="ghi_chu" Type="ntext" />
+          <Property Name="ngay_mua" Type="smalldatetime" />
+          <Property Name="kieu_hd" Type="numeric" Precision="1" />
+          <Property Name="ton_at" Type="numeric" Precision="14" Scale="3" />
+          <Property Name="co_lo" Type="numeric" Precision="14" Scale="3" />
+          <Property Name="so_ngay_dh" Type="numeric" Precision="3" />
+          <Property Name="sl_dat_kt" Type="numeric" Precision="14" Scale="3" />
+          <Property Name="vung_hd" Type="numeric" Precision="3" />
+          <Property Name="ma_lo_trinh" Type="char" MaxLength="24" />
+          <Property Name="status" Type="char" MaxLength="1" />
+          <Property Name="datetime0" Type="datetime" />
+          <Property Name="datetime2" Type="datetime" />
+          <Property Name="user_id0" Type="numeric" Precision="3" />
+          <Property Name="user_id2" Type="numeric" Precision="3" />
+          <Property Name="ma_td1" Type="char" MaxLength="24" />
+          <Property Name="ma_td2" Type="char" MaxLength="24" />
+          <Property Name="ma_td3" Type="char" MaxLength="24" />
+          <Property Name="sl_td1" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="sl_td2" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="sl_td3" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="ngay_td1" Type="smalldatetime" />
+          <Property Name="ngay_td2" Type="smalldatetime" />
+          <Property Name="ngay_td3" Type="smalldatetime" />
+          <Property Name="gc_td1" Type="nchar" MaxLength="128" />
+          <Property Name="gc_td2" Type="nchar" MaxLength="128" />
+          <Property Name="gc_td3" Type="nchar" MaxLength="128" />
+          <Property Name="s1" Type="char" MaxLength="24" />
+          <Property Name="s2" Type="char" MaxLength="24" />
+          <Property Name="s3" Type="char" MaxLength="24" />
+          <Property Name="s4" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s5" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s6" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s7" Type="smalldatetime" />
+          <Property Name="s8" Type="smalldatetime" />
+          <Property Name="s9" Type="smalldatetime" />
+        </EntityType>
+        <EntityType Name="ph71">
+          <Key>
+            <PropertyRef Name="stt_rec" />
+          </Key>
+          <Property Name="stt_rec" Type="char" Nullable="false" MaxLength="13" />
+          <Property Name="ma_dvcs" Type="char" MaxLength="8" />
+          <Property Name="ma_ct" Type="char" MaxLength="3" />
+          <Property Name="loai_ct" Type="char" MaxLength="2" />
+          <Property Name="so_lo" Type="char" MaxLength="9" />
+          <Property Name="ngay_lo" Type="smalldatetime" />
+          <Property Name="ma_nk" Type="char" MaxLength="8" />
+          <Property Name="ma_gd" Type="char" MaxLength="2" />
+          <Property Name="ngay_lct" Type="smalldatetime" />
+          <Property Name="ngay_ct" Type="smalldatetime" />
+          <Property Name="so_ct" Type="char" MaxLength="12" />
+          <Property Name="ma_nt" Type="char" MaxLength="3" />
+          <Property Name="ty_gia" Type="numeric" Precision="24" Scale="12" />
+          <Property Name="ong_ba" Type="nchar" MaxLength="24" />
+          <Property Name="ma_kh" Type="char" MaxLength="8" />
+          <Property Name="dien_giai" Type="nvarchar" MaxLength="128" />
+          <Property Name="ma_nx" Type="char" MaxLength="24" />
+          <Property Name="tk" Type="char" MaxLength="24" />
+          <Property Name="so_ct0" Type="char" MaxLength="12" />
+          <Property Name="so_seri0" Type="char" MaxLength="12" />
+          <Property Name="ngay_ct0" Type="smalldatetime" />
+          <Property Name="t_so_luong" Type="numeric" Precision="12" Scale="3" />
+          <Property Name="t_tien_nt" Type="numeric" Precision="15" Scale="2" />
+          <Property Name="t_tien" Type="numeric" Precision="15" Scale="2" />
+          <Property Name="t_thue_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_thue" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="tk_thue_no" Type="char" MaxLength="24" />
+          <Property Name="so_hd_gtgt" Type="numeric" Precision="3" />
+          <Property Name="t_tt_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_tt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="ma_kh2" Type="char" MaxLength="8" />
+          <Property Name="ma_tt" Type="char" MaxLength="2" />
+          <Property Name="t_tien0" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_tien_nt0" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_nk" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_nk_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_ttdb" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_ttdb_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_cp_bh" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_cp_bh_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_cp_vc" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_cp_vc_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_cp_khac" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_cp_khac_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_cp" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_cp_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="gia_thue_yn" Type="bit" />
+          <Property Name="nam" Type="numeric" Precision="4" />
+          <Property Name="ky" Type="numeric" Precision="2" />
+          <Property Name="xtag" Type="char" MaxLength="1" />
+          <Property Name="status" Type="char" MaxLength="1" />
+          <Property Name="datetime0" Type="datetime" />
+          <Property Name="datetime2" Type="datetime" />
+          <Property Name="user_id0" Type="numeric" Precision="3" />
+          <Property Name="user_id2" Type="numeric" Precision="3" />
+          <Property Name="contract_id" Type="char" MaxLength="24" />
+          <Property Name="bcontract_id" Type="char" MaxLength="24" />
+          <Property Name="fee_id" Type="char" MaxLength="24" />
+          <Property Name="so_dh" Type="char" MaxLength="24" />
+          <Property Name="job_id" Type="char" MaxLength="24" />
+          <Property Name="prd_id" Type="char" MaxLength="24" />
+          <Property Name="dept_id" Type="char" MaxLength="8" />
+          <Property Name="mo_nbr" Type="char" MaxLength="24" />
+          <Property Name="fcode1" Type="char" MaxLength="24" />
+          <Property Name="fcode2" Type="char" MaxLength="24" />
+          <Property Name="fcode3" Type="char" MaxLength="24" />
+          <Property Name="fdate1" Type="smalldatetime" />
+          <Property Name="fdate2" Type="smalldatetime" />
+          <Property Name="fdate3" Type="smalldatetime" />
+          <Property Name="fqty1" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="fqty2" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="fqty3" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="fnote1" Type="nchar" MaxLength="24" />
+          <Property Name="fnote2" Type="nchar" MaxLength="1" />
+          <Property Name="fnote3" Type="nchar" MaxLength="1" />
+          <Property Name="s1" Type="char" MaxLength="24" />
+          <Property Name="s2" Type="char" MaxLength="24" />
+          <Property Name="s3" Type="char" MaxLength="24" />
+          <Property Name="s4" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s5" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s6" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s7" Type="smalldatetime" />
+          <Property Name="s8" Type="smalldatetime" />
+          <Property Name="s9" Type="smalldatetime" />
+        </EntityType>
+        <EntityType Name="ph81">
+          <Key>
+            <PropertyRef Name="stt_rec" />
+          </Key>
+          <Property Name="stt_rec" Type="char" Nullable="false" MaxLength="13" />
+          <Property Name="ma_dvcs" Type="char" MaxLength="8" />
+          <Property Name="ma_ct" Type="char" MaxLength="3" />
+          <Property Name="loai_ct" Type="char" MaxLength="2" />
+          <Property Name="so_lo" Type="char" MaxLength="9" />
+          <Property Name="ngay_lo" Type="smalldatetime" />
+          <Property Name="ma_nk" Type="char" MaxLength="8" />
+          <Property Name="ma_gd" Type="char" MaxLength="2" />
+          <Property Name="ngay_lct" Type="smalldatetime" />
+          <Property Name="ngay_ct" Type="smalldatetime" />
+          <Property Name="so_ct" Type="char" MaxLength="12" />
+          <Property Name="ma_nt" Type="char" MaxLength="3" />
+          <Property Name="ty_gia" Type="numeric" Precision="24" Scale="12" />
+          <Property Name="ong_ba" Type="nchar" MaxLength="24" />
+          <Property Name="ma_kh" Type="char" MaxLength="8" />
+          <Property Name="dien_giai" Type="nvarchar" MaxLength="128" />
+          <Property Name="ma_nx" Type="char" MaxLength="24" />
+          <Property Name="tk" Type="char" MaxLength="24" />
+          <Property Name="t_so_luong" Type="numeric" Precision="12" Scale="3" />
+          <Property Name="t_tien_nt" Type="numeric" Precision="15" Scale="2" />
+          <Property Name="t_tien" Type="numeric" Precision="15" Scale="2" />
+          <Property Name="t_thue_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_thue" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_tt_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_tt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="ma_tt" Type="char" MaxLength="2" />
+          <Property Name="t_tien2" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_tien_nt2" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_tien_km" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_tien_km_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_thue_km" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_thue_km_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_km" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_km_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_tc_tien2" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_tc_tien_nt2" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_tc_thue" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_tc_thue_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_tc_tt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_tc_tt_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_ck" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_ck_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_cp_bh" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_cp_bh_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_cp_vc" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_cp_vc_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_cp_khac" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_cp_khac_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_cp" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="t_cp_nt" Type="numeric" Precision="16" Scale="2" />
+          <Property Name="ma_nvbh" Type="char" MaxLength="8" />
+          <Property Name="ck_thue_yn" Type="bit" />
+          <Property Name="ma_gia" Type="char" MaxLength="8" />
+          <Property Name="ten_vtthue" Type="nvarchar" MaxLength="128" />
+          <Property Name="ghi_chuthue" Type="nvarchar" MaxLength="128" />
+          <Property Name="tk_ck" Type="char" MaxLength="24" />
+          <Property Name="so_seri" Type="char" MaxLength="12" />
+          <Property Name="ma_thue" Type="char" MaxLength="8" />
+          <Property Name="thue_suat" Type="numeric" Precision="5" Scale="2" />
+          <Property Name="tk_thue_no" Type="char" MaxLength="24" />
+          <Property Name="tk_thue_co" Type="char" MaxLength="24" />
+          <Property Name="ma_kh2" Type="char" MaxLength="8" />
+          <Property Name="nam" Type="numeric" Precision="4" />
+          <Property Name="ky" Type="numeric" Precision="2" />
+          <Property Name="xtag" Type="char" MaxLength="1" />
+          <Property Name="status" Type="char" MaxLength="1" />
+          <Property Name="datetime0" Type="datetime" />
+          <Property Name="datetime2" Type="datetime" />
+          <Property Name="user_id0" Type="numeric" Precision="3" />
+          <Property Name="user_id2" Type="numeric" Precision="3" />
+          <Property Name="contract_id" Type="char" MaxLength="24" />
+          <Property Name="bcontract_id" Type="char" MaxLength="24" />
+          <Property Name="fee_id" Type="char" MaxLength="24" />
+          <Property Name="so_dh" Type="char" MaxLength="24" />
+          <Property Name="job_id" Type="char" MaxLength="24" />
+          <Property Name="prd_id" Type="char" MaxLength="24" />
+          <Property Name="dept_id" Type="char" MaxLength="8" />
+          <Property Name="mo_nbr" Type="char" MaxLength="24" />
+          <Property Name="fcode1" Type="char" MaxLength="24" />
+          <Property Name="fcode2" Type="char" MaxLength="24" />
+          <Property Name="fcode3" Type="char" MaxLength="24" />
+          <Property Name="fdate1" Type="smalldatetime" />
+          <Property Name="fdate2" Type="smalldatetime" />
+          <Property Name="fdate3" Type="smalldatetime" />
+          <Property Name="fqty1" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="fqty2" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="fqty3" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="fnote1" Type="nchar" MaxLength="24" />
+          <Property Name="fnote2" Type="nchar" MaxLength="1" />
+          <Property Name="fnote3" Type="nchar" MaxLength="1" />
+          <Property Name="s1" Type="char" MaxLength="24" />
+          <Property Name="s2" Type="char" MaxLength="24" />
+          <Property Name="s3" Type="char" MaxLength="24" />
+          <Property Name="s4" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s5" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s6" Type="numeric" Precision="16" Scale="4" />
+          <Property Name="s7" Type="smalldatetime" />
+          <Property Name="s8" Type="smalldatetime" />
+          <Property Name="s9" Type="smalldatetime" />
+          <Property Name="ma_httt" Type="char" MaxLength="8" />
+        </EntityType>
+        <Association Name="FK_ct71_ph71">
+          <End Role="ph71" Type="AppModel.Store.ph71" Multiplicity="1" />
+          <End Role="ct71" Type="AppModel.Store.ct71" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ph71">
+              <PropertyRef Name="stt_rec" />
+            </Principal>
+            <Dependent Role="ct71">
+              <PropertyRef Name="stt_rec" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ct81_ph81">
+          <End Role="ph81" Type="AppModel.Store.ph81" Multiplicity="1" />
+          <End Role="ct81" Type="AppModel.Store.ct81" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ph81">
+              <PropertyRef Name="stt_rec" />
+            </Principal>
+            <Dependent Role="ct81">
+              <PropertyRef Name="stt_rec" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <!--Errors Found During Generation:
+      warning 6013: The table/view 'Zalora_App.dbo.ct00' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="ct00">
+        <Property Name="stt_rec" Type="char" MaxLength="13" />
+        <Property Name="ma_dvcs" Type="char" MaxLength="8" />
+        <Property Name="loai_ct" Type="char" MaxLength="2" />
+        <Property Name="ma_ct" Type="char" MaxLength="3" />
+        <Property Name="ngay_ct" Type="smalldatetime" />
+        <Property Name="ngay_lct" Type="smalldatetime" />
+        <Property Name="so_ct" Type="char" MaxLength="12" />
+        <Property Name="so_ctgs" Type="char" MaxLength="12" />
+        <Property Name="ngay_ctgs" Type="smalldatetime" />
+        <Property Name="so_lo" Type="char" MaxLength="12" />
+        <Property Name="ngay_lo" Type="smalldatetime" />
+        <Property Name="ong_ba" Type="nchar" MaxLength="24" />
+        <Property Name="head_item" Type="char" MaxLength="1" />
+        <Property Name="dien_giai_h" Type="nvarchar" MaxLength="128" />
+        <Property Name="dien_giai" Type="nvarchar" MaxLength="128" />
+        <Property Name="nh_dk" Type="char" MaxLength="3" />
+        <Property Name="tk" Type="char" MaxLength="24" />
+        <Property Name="tk_du" Type="char" MaxLength="24" />
+        <Property Name="ps_no_nt" Type="numeric" Precision="16" Scale="2" />
+        <Property Name="ps_co_nt" Type="numeric" Precision="16" Scale="2" />
+        <Property Name="ma_nt" Type="char" MaxLength="3" />
+        <Property Name="ty_gia" Type="numeric" Precision="24" Scale="12" />
+        <Property Name="ps_no" Type="numeric" Precision="16" Scale="2" />
+        <Property Name="ps_co" Type="numeric" Precision="16" Scale="2" />
+        <Property Name="ma_kh" Type="char" MaxLength="8" />
+        <Property Name="ma_vv" Type="char" MaxLength="24" />
+        <Property Name="ma_nk" Type="char" MaxLength="8" />
+        <Property Name="ma_sp" Type="char" MaxLength="24" />
+        <Property Name="ma_bp" Type="char" MaxLength="8" />
+        <Property Name="so_lsx" Type="char" MaxLength="24" />
+        <Property Name="so_ct0" Type="char" MaxLength="12" />
+        <Property Name="ngay_ct0" Type="smalldatetime" />
+        <Property Name="ct_nxt" Type="tinyint" />
+        <Property Name="ma_gd" Type="char" MaxLength="2" />
+        <Property Name="nam" Type="numeric" Precision="4" />
+        <Property Name="ky" Type="tinyint" />
+        <Property Name="gt_no" Type="numeric" Precision="16" Scale="2" />
+        <Property Name="gt_co" Type="numeric" Precision="16" Scale="2" />
+        <Property Name="gt_tinh" Type="numeric" Precision="1" />
+        <Property Name="gt_dd" Type="numeric" Precision="1" />
+        <Property Name="sua_tg_yn" Type="numeric" Precision="1" />
+        <Property Name="line_nbr" Type="numeric" Precision="5" />
+        <Property Name="status" Type="char" MaxLength="1" />
+        <Property Name="datetime0" Type="datetime" />
+        <Property Name="datetime2" Type="datetime" />
+        <Property Name="user_id0" Type="numeric" Precision="3" />
+        <Property Name="user_id2" Type="numeric" Precision="3" />
+        <Property Name="ma_hd" Type="char" MaxLength="24" />
+        <Property Name="ma_ku" Type="char" MaxLength="24" />
+        <Property Name="ma_phi" Type="char" MaxLength="24" />
+        <Property Name="so_dh" Type="char" MaxLength="24" />
+        <Property Name="ma_td1" Type="char" MaxLength="24" />
+        <Property Name="ma_td2" Type="char" MaxLength="24" />
+        <Property Name="ma_td3" Type="char" MaxLength="24" />
+        <Property Name="sl_td1" Type="numeric" Precision="16" Scale="4" />
+        <Property Name="sl_td2" Type="numeric" Precision="16" Scale="4" />
+        <Property Name="sl_td3" Type="numeric" Precision="16" Scale="4" />
+        <Property Name="ngay_td1" Type="smalldatetime" />
+        <Property Name="ngay_td2" Type="smalldatetime" />
+        <Property Name="ngay_td3" Type="smalldatetime" />
+        <Property Name="gc_td1" Type="nchar" MaxLength="24" />
+        <Property Name="gc_td2" Type="nchar" MaxLength="1" />
+        <Property Name="gc_td3" Type="nchar" MaxLength="1" />
+        <Property Name="s1" Type="char" MaxLength="24" />
+        <Property Name="s2" Type="char" MaxLength="24" />
+        <Property Name="s3" Type="char" MaxLength="24" />
+        <Property Name="s4" Type="numeric" Precision="16" Scale="4" />
+        <Property Name="s5" Type="numeric" Precision="16" Scale="4" />
+        <Property Name="s6" Type="numeric" Precision="16" Scale="4" />
+        <Property Name="s7" Type="smalldatetime" />
+        <Property Name="s8" Type="smalldatetime" />
+        <Property Name="s9" Type="smalldatetime" />
+        <Property Name="ma_httt" Type="char" MaxLength="8" />
+      </EntityType>-->
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AppModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="AppEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ct70" EntityType="AppModel.ct70" />
+          <EntitySet Name="ct71" EntityType="AppModel.ct71" />
+          <EntitySet Name="ct81" EntityType="AppModel.ct81" />
+          <EntitySet Name="dmcts" EntityType="AppModel.dmct" />
+          <EntitySet Name="dmkhs" EntityType="AppModel.dmkh" />
+          <EntitySet Name="dmvts" EntityType="AppModel.dmvt" />
+          <EntitySet Name="ph71" EntityType="AppModel.ph71" />
+          <EntitySet Name="ph81" EntityType="AppModel.ph81" />
+          <AssociationSet Name="FK_ct71_ph71" Association="AppModel.FK_ct71_ph71">
+            <End Role="ph71" EntitySet="ph71" />
+            <End Role="ct71" EntitySet="ct71" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ct81_ph81" Association="AppModel.FK_ct81_ph81">
+            <End Role="ph81" EntitySet="ph81" />
+            <End Role="ct81" EntitySet="ct81" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ct70">
+          <Key>
+            <PropertyRef Name="stt_rec" />
+            <PropertyRef Name="stt_rec0" />
+          </Key>
+          <Property Name="stt_rec" Type="String" Nullable="false" MaxLength="13" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec0" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="ma_dvcs" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ma_ct" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="loai_ct" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="ma_gd" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="ma_nk" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="nxt" Type="Byte" />
+          <Property Name="ct_dc" Type="Byte" />
+          <Property Name="pn_gia_tb" Type="Boolean" />
+          <Property Name="px_gia_dd" Type="Boolean" />
+          <Property Name="ngay_lct" Type="DateTime" />
+          <Property Name="ngay_ct" Type="DateTime" />
+          <Property Name="so_ct" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+          <Property Name="so_seri" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+          <Property Name="so_lo" Type="String" MaxLength="9" Unicode="false" FixedLength="true" />
+          <Property Name="ngay_lo" Type="DateTime" />
+          <Property Name="ma_kh" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ma_khon" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ma_kho" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ma_vi_trin" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ma_vi_tri" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ong_ba" Type="String" MaxLength="24" Unicode="true" FixedLength="true" />
+          <Property Name="dien_giai" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="ma_vv" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_sp" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_bp" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="so_lsx" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_hd" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_ku" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_phi" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="so_dh2" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="so_dh3" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_nvbh" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ma_nv" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ma_nx" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="tk_du" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_nt" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="ty_gia" Type="Decimal" Precision="24" Scale="12" />
+          <Property Name="ma_vt" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_lo" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="dvt1" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="sl_nhap1" Type="Decimal" Precision="18" Scale="3" />
+          <Property Name="sl_xuat1" Type="Decimal" Precision="18" Scale="3" />
+          <Property Name="he_so1" Type="Decimal" Precision="8" Scale="3" />
+          <Property Name="gia_nt1" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="gia1" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="gia01" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="gia_nt01" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="gia21" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="gia_nt21" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="tk_vt" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="tk_gv" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="tk_dt" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="sl_nhap" Type="Decimal" Precision="13" Scale="3" />
+          <Property Name="sl_xuat" Type="Decimal" Precision="13" Scale="3" />
+          <Property Name="gia_nt" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="gia" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="tien_nt_n" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="tien_nt_x" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="tien_nhap" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="tien_xuat" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="gia_nt0" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="gia0" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="tien_nt0" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="tien0" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp_vc" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp_vc_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp_bh" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp_bh_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp_khac" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp_khac_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="thue_suat_nk" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="nk_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="nk" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="tk_thue_nk" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="thue_suat_ttdb" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="ttdb_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="ttdb" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="tk_thue_ttdb" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="gia_nt2" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="gia2" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="tien_nt2" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="tien2" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="ma_tt" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="cp_thue_yn" Type="Boolean" />
+          <Property Name="thue_suat" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="thue_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="thue" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="tk_thue_no" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="tk_thue_co" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ck_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="ck" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="tk_ck" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec_pn" Type="String" MaxLength="13" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec0pn" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec_px" Type="String" MaxLength="13" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec0px" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec_dc" Type="String" MaxLength="13" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec_yc" Type="String" MaxLength="13" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec0yc" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="ngay_ct0" Type="DateTime" />
+          <Property Name="so_ct0" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+          <Property Name="so_seri0" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+          <Property Name="nam" Type="Decimal" Precision="4" Scale="0" />
+          <Property Name="ky" Type="Decimal" Precision="2" Scale="0" />
+          <Property Name="line_nbr" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="datetime0" Type="DateTime" />
+          <Property Name="datetime2" Type="DateTime" />
+          <Property Name="user_id0" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="user_id2" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="ma_td1" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_td2" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_td3" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="sl_td1" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="sl_td2" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="sl_td3" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="ngay_td1" Type="DateTime" />
+          <Property Name="ngay_td2" Type="DateTime" />
+          <Property Name="ngay_td3" Type="DateTime" />
+          <Property Name="gc_td1" Type="String" MaxLength="24" Unicode="true" FixedLength="true" />
+          <Property Name="gc_td2" Type="String" MaxLength="24" Unicode="true" FixedLength="true" />
+          <Property Name="gc_td3" Type="String" MaxLength="24" Unicode="true" FixedLength="true" />
+          <Property Name="s1" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s2" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s3" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s4" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s5" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s6" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s7" Type="DateTime" />
+          <Property Name="s8" Type="DateTime" />
+          <Property Name="s9" Type="DateTime" />
+          <Property Name="is_giaban_co_vat" Type="Boolean" />
+          <Property Name="tl_ck" Type="Decimal" Precision="6" Scale="2" />
+          <Property Name="ma_httt" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ma_kho_kg" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="is_ck_co_vat" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="ct71">
+          <Key>
+            <PropertyRef Name="stt_rec" />
+            <PropertyRef Name="stt_rec0" />
+          </Key>
+          <Property Name="stt_rec" Type="String" Nullable="false" MaxLength="13" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec0" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="ma_ct" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="ngay_ct" Type="DateTime" />
+          <Property Name="so_ct" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+          <Property Name="ma_vt" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_sp" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_bp" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="so_lsx" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="dvt" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="he_so" Type="Decimal" Precision="13" Scale="3" />
+          <Property Name="ma_kho" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ma_vi_tri" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ma_lo" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_vv" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="tk_vt" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="so_luong" Type="Decimal" Precision="12" Scale="3" />
+          <Property Name="gia_nt" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="gia" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="gia_nt0" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="gia0" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="tien_nt" Type="Decimal" Precision="15" Scale="2" />
+          <Property Name="tien" Type="Decimal" Precision="15" Scale="2" />
+          <Property Name="ma_thue" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="tk_thue" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="thue_suat" Type="Decimal" Precision="7" Scale="2" />
+          <Property Name="thue" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="thue_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="tt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="tt_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="xstatus" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="xaction" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="tien0" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="tien_nt0" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="ma_thue_nk" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="thue_suat_nk" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="tk_thue_nk" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="nk" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="nk_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="ma_thue_ttdb" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="thue_suat_ttdb" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="tk_thue_ttdb" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ttdb" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="ttdb_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp_bh" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp_bh_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp_vc" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp_vc_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp_khac" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp_khac_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="stt_rec_ct" Type="String" MaxLength="13" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec0ct" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec_dh" Type="String" MaxLength="13" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec0dh" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec_pn" Type="String" MaxLength="13" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec0pn" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="tien_hang" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="tien_hang_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="line_nbr" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="ma_hd" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_ku" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_phi" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="so_dh_i" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_td1" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_td2" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_td3" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="sl_td1" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="sl_td2" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="sl_td3" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="ngay_td1" Type="DateTime" />
+          <Property Name="ngay_td2" Type="DateTime" />
+          <Property Name="ngay_td3" Type="DateTime" />
+          <Property Name="gc_td1" Type="String" MaxLength="24" Unicode="true" FixedLength="true" />
+          <Property Name="gc_td2" Type="String" MaxLength="1" Unicode="true" FixedLength="true" />
+          <Property Name="gc_td3" Type="String" MaxLength="1" Unicode="true" FixedLength="true" />
+          <Property Name="s1" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s2" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s3" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s4" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s5" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s6" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s7" Type="DateTime" />
+          <Property Name="s8" Type="DateTime" />
+          <Property Name="s9" Type="DateTime" />
+          <Property Name="ma_kho_kg" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="ph71" Relationship="AppModel.FK_ct71_ph71" FromRole="ct71" ToRole="ph71" />
+        </EntityType>
+        <EntityType Name="ct81">
+          <Key>
+            <PropertyRef Name="stt_rec" />
+            <PropertyRef Name="stt_rec0" />
+          </Key>
+          <Property Name="stt_rec" Type="String" Nullable="false" MaxLength="13" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec0" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="ma_ct" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="ngay_ct" Type="DateTime" />
+          <Property Name="so_ct" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+          <Property Name="ma_vt" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="km_yn" Type="Byte" />
+          <Property Name="ma_sp" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_bp" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="so_lsx" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="dvt" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="he_so" Type="Decimal" Precision="13" Scale="3" />
+          <Property Name="ma_kho" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ma_vi_tri" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ma_lo" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_vv" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="tk_vt" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="so_luong" Type="Decimal" Precision="12" Scale="3" />
+          <Property Name="gia_nt" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="gia" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="gia_nt2" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="gia2" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="tien_nt" Type="Decimal" Precision="15" Scale="2" />
+          <Property Name="tien" Type="Decimal" Precision="15" Scale="2" />
+          <Property Name="thue" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="thue_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="tt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="tt_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="xstatus" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="xaction" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="tien2" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="tien_nt2" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp_bh" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp_bh_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp_vc" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp_vc_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp_khac" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp_khac_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="cp_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="stt_rec_ct" Type="String" MaxLength="13" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec0ct" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="gia_ban0" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="gia_ban_nt0" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="gia_ban" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="gia_ban_nt" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="gia_ck" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="gia_ck_nt" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="ck" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="ck_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="sl_dh" Type="Decimal" Precision="14" Scale="3" />
+          <Property Name="sl_xuat" Type="Decimal" Precision="14" Scale="3" />
+          <Property Name="sl_giao" Type="Decimal" Precision="14" Scale="3" />
+          <Property Name="stt_rec_dh" Type="String" MaxLength="13" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec0dh" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec_px" Type="String" MaxLength="13" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec0px" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec_gh" Type="String" MaxLength="13" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec0gh" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec_pn" Type="String" MaxLength="13" Unicode="false" FixedLength="true" />
+          <Property Name="stt_rec0pn" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="tk_gv" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="tk_dt" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="tk_ck" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="tk_cpbh" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="px_gia_dd" Type="Boolean" />
+          <Property Name="ma_nvbh_i" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="line_nbr" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="ma_hd" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_ku" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_phi" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="so_dh_i" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_td1" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_td2" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_td3" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="sl_td1" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="sl_td2" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="sl_td3" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="ngay_td1" Type="DateTime" />
+          <Property Name="ngay_td2" Type="DateTime" />
+          <Property Name="ngay_td3" Type="DateTime" />
+          <Property Name="gc_td1" Type="String" MaxLength="24" Unicode="true" FixedLength="true" />
+          <Property Name="gc_td2" Type="String" MaxLength="1" Unicode="true" FixedLength="true" />
+          <Property Name="gc_td3" Type="String" MaxLength="1" Unicode="true" FixedLength="true" />
+          <Property Name="s1" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s2" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s3" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s4" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s5" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s6" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s7" Type="DateTime" />
+          <Property Name="s8" Type="DateTime" />
+          <Property Name="s9" Type="DateTime" />
+          <Property Name="is_giaban_co_vat" Type="Boolean" />
+          <Property Name="tl_ck" Type="Decimal" Precision="6" Scale="2" />
+          <Property Name="is_ck_co_vat" Type="Boolean" />
+          <Property Name="ma_thue" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="thue_suat" Type="Decimal" Precision="7" Scale="2" />
+          <Property Name="tk_thue" Type="String" MaxLength="24" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="ph81" Relationship="AppModel.FK_ct81_ph81" FromRole="ct81" ToRole="ph81" />
+        </EntityType>
+        <EntityType Name="dmct">
+          <Key>
+            <PropertyRef Name="ma_ct" />
+          </Key>
+          <Property Name="ma_phan_he" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="ma_ct" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="ten_ct" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="ten_ct2" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="ma_ct_me" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="so_ct" Type="Decimal" Precision="12" Scale="0" />
+          <Property Name="ma_nt" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="ma_ct_in" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="so_lien" Type="Byte" />
+          <Property Name="tieu_de_ct" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="tieu_de_ct2" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="stt_ct_nkc" Type="Byte" />
+          <Property Name="stt_ctntxt" Type="Byte" />
+          <Property Name="ct_nxt" Type="Byte" />
+          <Property Name="m_ctdbf" Type="String" MaxLength="6" Unicode="false" FixedLength="true" />
+          <Property Name="m_phdbf" Type="String" MaxLength="6" Unicode="false" FixedLength="true" />
+          <Property Name="post_type" Type="Byte" />
+          <Property Name="dk_ctgs" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="stt" Type="Byte" />
+          <Property Name="max_row" Type="Byte" />
+          <Property Name="v_nbr_blank_yn" Type="Boolean" />
+          <Property Name="v_nbr_unit_yn" Type="Boolean" />
+          <Property Name="v_nbr_user_yn" Type="Boolean" />
+          <Property Name="v_nbr_auto_yn" Type="Boolean" />
+          <Property Name="v_nbr_fields" Type="String" MaxLength="48" Unicode="false" FixedLength="true" />
+          <Property Name="m_status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="m_ma_nk" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="m_ma_gd" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="m_loai_ct" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="m_ma_td1" Type="Byte" />
+          <Property Name="m_ma_td2" Type="Byte" />
+          <Property Name="m_ma_td3" Type="Byte" />
+          <Property Name="m_sl_ct0" Type="Byte" />
+          <Property Name="m_trung_so" Type="Decimal" Precision="2" Scale="0" />
+          <Property Name="m_loc_nsd" Type="Byte" />
+          <Property Name="m_ong_ba" Type="Byte" />
+          <Property Name="m_ngay_ct" Type="Byte" />
+          <Property Name="m_phdbfs" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="m_ctdbfs" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="post_vv" Type="Byte" />
+          <Property Name="post_sp" Type="Byte" />
+          <Property Name="post_bp" Type="Byte" />
+          <Property Name="post_hd" Type="Byte" />
+          <Property Name="post_ku" Type="Byte" />
+          <Property Name="post_phi" Type="Byte" />
+          <Property Name="post_lsx" Type="Byte" />
+          <Property Name="post_td1" Type="Byte" />
+          <Property Name="post_td2" Type="Byte" />
+          <Property Name="post_td3" Type="Byte" />
+          <Property Name="voucher_yn" Type="Byte" />
+          <Property Name="fs_post" Type="String" MaxLength="32" Unicode="false" FixedLength="true" />
+          <Property Name="xstatus" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="xgl" Type="Boolean" />
+          <Property Name="xin" Type="Boolean" />
+          <Property Name="xin_type" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="xin_p_update" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="datetime0" Type="DateTime" />
+          <Property Name="datetime2" Type="DateTime" />
+          <Property Name="user_id0" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="user_id2" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="ma_td1" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_td2" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_td3" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="sl_td1" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="sl_td2" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="sl_td3" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="ngay_td1" Type="DateTime" />
+          <Property Name="ngay_td2" Type="DateTime" />
+          <Property Name="ngay_td3" Type="DateTime" />
+          <Property Name="gc_td1" Type="String" MaxLength="128" Unicode="true" FixedLength="true" />
+          <Property Name="gc_td2" Type="String" MaxLength="128" Unicode="true" FixedLength="true" />
+          <Property Name="gc_td3" Type="String" MaxLength="128" Unicode="true" FixedLength="true" />
+          <Property Name="s1" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s2" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s3" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s4" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s5" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s6" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s7" Type="DateTime" />
+          <Property Name="s8" Type="DateTime" />
+          <Property Name="s9" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="dmkh">
+          <Key>
+            <PropertyRef Name="ma_kh" />
+          </Key>
+          <Property Name="ma_kh" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ten_kh" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="ten_kh2" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="kh_yn" Type="Boolean" />
+          <Property Name="cc_yn" Type="Boolean" />
+          <Property Name="nv_yn" Type="Boolean" />
+          <Property Name="ma_so_thue" Type="String" MaxLength="18" Unicode="false" FixedLength="true" />
+          <Property Name="dia_chi" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="dien_thoai" Type="String" MaxLength="32" Unicode="false" FixedLength="true" />
+          <Property Name="fax" Type="String" MaxLength="32" Unicode="false" FixedLength="true" />
+          <Property Name="e_mail" Type="String" MaxLength="48" Unicode="false" FixedLength="true" />
+          <Property Name="home_page" Type="String" MaxLength="48" Unicode="false" FixedLength="true" />
+          <Property Name="doi_tac" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="ong_ba" Type="String" MaxLength="24" Unicode="true" FixedLength="true" />
+          <Property Name="ma_nvbh" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ngan_hang" Type="String" MaxLength="128" Unicode="true" FixedLength="true" />
+          <Property Name="tk_nh" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="tinh_thanh" Type="String" MaxLength="24" Unicode="true" FixedLength="true" />
+          <Property Name="ghi_chu" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="ma_tt" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="tk" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="nh_kh1" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="nh_kh2" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="nh_kh3" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="nh_kh9" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="du_nt13" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="du13" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_tien_cn" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_tien_hd" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="ngay_gh" Type="DateTime" />
+          <Property Name="status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="datetime0" Type="DateTime" />
+          <Property Name="datetime2" Type="DateTime" />
+          <Property Name="user_id0" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="user_id2" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="ma_td1" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_td2" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_td3" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="sl_td1" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="sl_td2" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="sl_td3" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="ngay_td1" Type="DateTime" />
+          <Property Name="ngay_td2" Type="DateTime" />
+          <Property Name="ngay_td3" Type="DateTime" />
+          <Property Name="gc_td1" Type="String" MaxLength="128" Unicode="true" FixedLength="true" />
+          <Property Name="gc_td2" Type="String" MaxLength="128" Unicode="true" FixedLength="true" />
+          <Property Name="gc_td3" Type="String" MaxLength="128" Unicode="true" FixedLength="true" />
+          <Property Name="s1" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s2" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s3" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s4" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s5" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s6" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s7" Type="DateTime" />
+          <Property Name="s8" Type="DateTime" />
+          <Property Name="s9" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="dmvt">
+          <Key>
+            <PropertyRef Name="ma_vt" />
+          </Key>
+          <Property Name="ma_vt" Type="String" Nullable="false" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_vt2" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ten_vt" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="ten_vt2" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="dvt" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="nhieu_dvt" Type="Boolean" />
+          <Property Name="dvt2" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="dvt3" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="vt_ton_kho" Type="Boolean" />
+          <Property Name="gia_ton" Type="Byte" />
+          <Property Name="loai_vt" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="nh_vt1" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="nh_vt2" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="nh_vt3" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="nh_vt9" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="abc_code" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="nguon" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="lo_yn" Type="Boolean" />
+          <Property Name="ma_kho" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ma_vi_tri" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ma_thue" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ma_thue_nk" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="kk_yn" Type="Boolean" />
+          <Property Name="sl_min" Type="Decimal" Precision="12" Scale="3" />
+          <Property Name="sl_max" Type="Decimal" Precision="12" Scale="3" />
+          <Property Name="tk_vt" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="sua_tk_vt" Type="Boolean" />
+          <Property Name="tk_gv" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="tk_dt" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="tk_dtnb" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="tk_tl" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="tk_dl" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="tk_spdd" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="tk_cl_vt" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="tk_ck" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="tk_cpbh" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="kieu_lo" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="cach_xuat" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="so_ngay_sp" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="so_ngay_bh" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="ong_ba" Type="String" MaxLength="24" Unicode="true" FixedLength="true" />
+          <Property Name="ma_kh0" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ma_kh2" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ma_kh" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="height" Type="Decimal" Precision="13" Scale="3" />
+          <Property Name="length" Type="Decimal" Precision="13" Scale="3" />
+          <Property Name="volume" Type="Decimal" Precision="13" Scale="3" />
+          <Property Name="weight" Type="Decimal" Precision="13" Scale="3" />
+          <Property Name="width" Type="Decimal" Precision="13" Scale="3" />
+          <Property Name="density" Type="Decimal" Precision="13" Scale="3" />
+          <Property Name="depth" Type="Decimal" Precision="13" Scale="3" />
+          <Property Name="diameter" Type="Decimal" Precision="13" Scale="3" />
+          <Property Name="gauge" Type="Decimal" Precision="13" Scale="3" />
+          <Property Name="height0" Type="Decimal" Precision="13" Scale="3" />
+          <Property Name="length0" Type="Decimal" Precision="13" Scale="3" />
+          <Property Name="volume0" Type="Decimal" Precision="13" Scale="3" />
+          <Property Name="weight0" Type="Decimal" Precision="13" Scale="3" />
+          <Property Name="width0" Type="Decimal" Precision="13" Scale="3" />
+          <Property Name="xsize" Type="String" MaxLength="64" Unicode="true" FixedLength="true" />
+          <Property Name="xstyle" Type="String" MaxLength="64" Unicode="true" FixedLength="true" />
+          <Property Name="xcolor" Type="String" MaxLength="64" Unicode="true" FixedLength="true" />
+          <Property Name="weight2" Type="Decimal" Precision="13" Scale="3" />
+          <Property Name="dvtheight" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="dvtlength" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="dvtvolume" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="dvtweight" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="dvtwidth" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="dvtdensity" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="dvtdepth" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="dvtdiameter" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="dvtgauge" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="dvtheight0" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="dvtlength0" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="dvtvolume0" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="dvtweight0" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="dvtwidth0" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="dvtweight2" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="packs" Type="Decimal" Precision="13" Scale="3" />
+          <Property Name="dvtpacks" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="pack_size" Type="String" MaxLength="24" Unicode="true" FixedLength="true" />
+          <Property Name="nuoc_sx" Type="String" MaxLength="24" Unicode="true" FixedLength="true" />
+          <Property Name="tg_th" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="sl_lo_chuan" Type="Decimal" Precision="13" Scale="3" />
+          <Property Name="dvttg_th" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="dvtsl_lo_chuan" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="ghi_chu" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="ngay_mua" Type="DateTime" />
+          <Property Name="kieu_hd" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="ton_at" Type="Decimal" Precision="14" Scale="3" />
+          <Property Name="co_lo" Type="Decimal" Precision="14" Scale="3" />
+          <Property Name="so_ngay_dh" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="sl_dat_kt" Type="Decimal" Precision="14" Scale="3" />
+          <Property Name="vung_hd" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="ma_lo_trinh" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="datetime0" Type="DateTime" />
+          <Property Name="datetime2" Type="DateTime" />
+          <Property Name="user_id0" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="user_id2" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="ma_td1" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_td2" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_td3" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="sl_td1" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="sl_td2" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="sl_td3" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="ngay_td1" Type="DateTime" />
+          <Property Name="ngay_td2" Type="DateTime" />
+          <Property Name="ngay_td3" Type="DateTime" />
+          <Property Name="gc_td1" Type="String" MaxLength="128" Unicode="true" FixedLength="true" />
+          <Property Name="gc_td2" Type="String" MaxLength="128" Unicode="true" FixedLength="true" />
+          <Property Name="gc_td3" Type="String" MaxLength="128" Unicode="true" FixedLength="true" />
+          <Property Name="s1" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s2" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s3" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s4" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s5" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s6" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s7" Type="DateTime" />
+          <Property Name="s8" Type="DateTime" />
+          <Property Name="s9" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="ph71">
+          <Key>
+            <PropertyRef Name="stt_rec" />
+          </Key>
+          <Property Name="stt_rec" Type="String" Nullable="false" MaxLength="13" Unicode="false" FixedLength="true" />
+          <Property Name="ma_dvcs" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ma_ct" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="loai_ct" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="so_lo" Type="String" MaxLength="9" Unicode="false" FixedLength="true" />
+          <Property Name="ngay_lo" Type="DateTime" />
+          <Property Name="ma_nk" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ma_gd" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="ngay_lct" Type="DateTime" />
+          <Property Name="ngay_ct" Type="DateTime" />
+          <Property Name="so_ct" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+          <Property Name="ma_nt" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="ty_gia" Type="Decimal" Precision="24" Scale="12" />
+          <Property Name="ong_ba" Type="String" MaxLength="24" Unicode="true" FixedLength="true" />
+          <Property Name="ma_kh" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="dien_giai" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="ma_nx" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="tk" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="so_ct0" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+          <Property Name="so_seri0" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+          <Property Name="ngay_ct0" Type="DateTime" />
+          <Property Name="t_so_luong" Type="Decimal" Precision="12" Scale="3" />
+          <Property Name="t_tien_nt" Type="Decimal" Precision="15" Scale="2" />
+          <Property Name="t_tien" Type="Decimal" Precision="15" Scale="2" />
+          <Property Name="t_thue_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_thue" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="tk_thue_no" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="so_hd_gtgt" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="t_tt_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_tt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="ma_kh2" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ma_tt" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="t_tien0" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_tien_nt0" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_nk" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_nk_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_ttdb" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_ttdb_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_cp_bh" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_cp_bh_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_cp_vc" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_cp_vc_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_cp_khac" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_cp_khac_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_cp" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_cp_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="gia_thue_yn" Type="Boolean" />
+          <Property Name="nam" Type="Decimal" Precision="4" Scale="0" />
+          <Property Name="ky" Type="Decimal" Precision="2" Scale="0" />
+          <Property Name="xtag" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="datetime0" Type="DateTime" />
+          <Property Name="datetime2" Type="DateTime" />
+          <Property Name="user_id0" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="user_id2" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="contract_id" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="bcontract_id" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="fee_id" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="so_dh" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="job_id" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="prd_id" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="dept_id" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="mo_nbr" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="fcode1" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="fcode2" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="fcode3" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="fdate1" Type="DateTime" />
+          <Property Name="fdate2" Type="DateTime" />
+          <Property Name="fdate3" Type="DateTime" />
+          <Property Name="fqty1" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="fqty2" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="fqty3" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="fnote1" Type="String" MaxLength="24" Unicode="true" FixedLength="true" />
+          <Property Name="fnote2" Type="String" MaxLength="1" Unicode="true" FixedLength="true" />
+          <Property Name="fnote3" Type="String" MaxLength="1" Unicode="true" FixedLength="true" />
+          <Property Name="s1" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s2" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s3" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s4" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s5" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s6" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s7" Type="DateTime" />
+          <Property Name="s8" Type="DateTime" />
+          <Property Name="s9" Type="DateTime" />
+          <NavigationProperty Name="ct71" Relationship="AppModel.FK_ct71_ph71" FromRole="ph71" ToRole="ct71" />
+        </EntityType>
+        <EntityType Name="ph81">
+          <Key>
+            <PropertyRef Name="stt_rec" />
+          </Key>
+          <Property Name="stt_rec" Type="String" Nullable="false" MaxLength="13" Unicode="false" FixedLength="true" />
+          <Property Name="ma_dvcs" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ma_ct" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="loai_ct" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="so_lo" Type="String" MaxLength="9" Unicode="false" FixedLength="true" />
+          <Property Name="ngay_lo" Type="DateTime" />
+          <Property Name="ma_nk" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ma_gd" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="ngay_lct" Type="DateTime" />
+          <Property Name="ngay_ct" Type="DateTime" />
+          <Property Name="so_ct" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+          <Property Name="ma_nt" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="ty_gia" Type="Decimal" Precision="24" Scale="12" />
+          <Property Name="ong_ba" Type="String" MaxLength="24" Unicode="true" FixedLength="true" />
+          <Property Name="ma_kh" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="dien_giai" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="ma_nx" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="tk" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="t_so_luong" Type="Decimal" Precision="12" Scale="3" />
+          <Property Name="t_tien_nt" Type="Decimal" Precision="15" Scale="2" />
+          <Property Name="t_tien" Type="Decimal" Precision="15" Scale="2" />
+          <Property Name="t_thue_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_thue" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_tt_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_tt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="ma_tt" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="t_tien2" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_tien_nt2" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_tien_km" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_tien_km_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_thue_km" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_thue_km_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_km" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_km_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_tc_tien2" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_tc_tien_nt2" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_tc_thue" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_tc_thue_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_tc_tt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_tc_tt_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_ck" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_ck_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_cp_bh" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_cp_bh_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_cp_vc" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_cp_vc_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_cp_khac" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_cp_khac_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_cp" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="t_cp_nt" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="ma_nvbh" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ck_thue_yn" Type="Boolean" />
+          <Property Name="ma_gia" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="ten_vtthue" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="ghi_chuthue" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="tk_ck" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="so_seri" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+          <Property Name="ma_thue" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="thue_suat" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="tk_thue_no" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="tk_thue_co" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="ma_kh2" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="nam" Type="Decimal" Precision="4" Scale="0" />
+          <Property Name="ky" Type="Decimal" Precision="2" Scale="0" />
+          <Property Name="xtag" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="datetime0" Type="DateTime" />
+          <Property Name="datetime2" Type="DateTime" />
+          <Property Name="user_id0" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="user_id2" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="contract_id" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="bcontract_id" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="fee_id" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="so_dh" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="job_id" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="prd_id" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="dept_id" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="mo_nbr" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="fcode1" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="fcode2" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="fcode3" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="fdate1" Type="DateTime" />
+          <Property Name="fdate2" Type="DateTime" />
+          <Property Name="fdate3" Type="DateTime" />
+          <Property Name="fqty1" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="fqty2" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="fqty3" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="fnote1" Type="String" MaxLength="24" Unicode="true" FixedLength="true" />
+          <Property Name="fnote2" Type="String" MaxLength="1" Unicode="true" FixedLength="true" />
+          <Property Name="fnote3" Type="String" MaxLength="1" Unicode="true" FixedLength="true" />
+          <Property Name="s1" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s2" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s3" Type="String" MaxLength="24" Unicode="false" FixedLength="true" />
+          <Property Name="s4" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s5" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s6" Type="Decimal" Precision="16" Scale="4" />
+          <Property Name="s7" Type="DateTime" />
+          <Property Name="s8" Type="DateTime" />
+          <Property Name="s9" Type="DateTime" />
+          <Property Name="ma_httt" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="ct81" Relationship="AppModel.FK_ct81_ph81" FromRole="ph81" ToRole="ct81" />
+        </EntityType>
+        <Association Name="FK_ct71_ph71">
+          <End Role="ph71" Type="AppModel.ph71" Multiplicity="1" />
+          <End Role="ct71" Type="AppModel.ct71" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ph71">
+              <PropertyRef Name="stt_rec" />
+            </Principal>
+            <Dependent Role="ct71">
+              <PropertyRef Name="stt_rec" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ct81_ph81">
+          <End Role="ph81" Type="AppModel.ph81" Multiplicity="1" />
+          <End Role="ct81" Type="AppModel.ct81" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ph81">
+              <PropertyRef Name="stt_rec" />
+            </Principal>
+            <Dependent Role="ct81">
+              <PropertyRef Name="stt_rec" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AppModelStoreContainer" CdmEntityContainer="AppEntities">
+          <EntitySetMapping Name="ct70"><EntityTypeMapping TypeName="AppModel.ct70"><MappingFragment StoreEntitySet="ct70">
+            <ScalarProperty Name="stt_rec" ColumnName="stt_rec" />
+            <ScalarProperty Name="stt_rec0" ColumnName="stt_rec0" />
+            <ScalarProperty Name="ma_dvcs" ColumnName="ma_dvcs" />
+            <ScalarProperty Name="ma_ct" ColumnName="ma_ct" />
+            <ScalarProperty Name="loai_ct" ColumnName="loai_ct" />
+            <ScalarProperty Name="ma_gd" ColumnName="ma_gd" />
+            <ScalarProperty Name="ma_nk" ColumnName="ma_nk" />
+            <ScalarProperty Name="nxt" ColumnName="nxt" />
+            <ScalarProperty Name="ct_dc" ColumnName="ct_dc" />
+            <ScalarProperty Name="pn_gia_tb" ColumnName="pn_gia_tb" />
+            <ScalarProperty Name="px_gia_dd" ColumnName="px_gia_dd" />
+            <ScalarProperty Name="ngay_lct" ColumnName="ngay_lct" />
+            <ScalarProperty Name="ngay_ct" ColumnName="ngay_ct" />
+            <ScalarProperty Name="so_ct" ColumnName="so_ct" />
+            <ScalarProperty Name="so_seri" ColumnName="so_seri" />
+            <ScalarProperty Name="so_lo" ColumnName="so_lo" />
+            <ScalarProperty Name="ngay_lo" ColumnName="ngay_lo" />
+            <ScalarProperty Name="ma_kh" ColumnName="ma_kh" />
+            <ScalarProperty Name="ma_khon" ColumnName="ma_khon" />
+            <ScalarProperty Name="ma_kho" ColumnName="ma_kho" />
+            <ScalarProperty Name="ma_vi_trin" ColumnName="ma_vi_trin" />
+            <ScalarProperty Name="ma_vi_tri" ColumnName="ma_vi_tri" />
+            <ScalarProperty Name="ong_ba" ColumnName="ong_ba" />
+            <ScalarProperty Name="dien_giai" ColumnName="dien_giai" />
+            <ScalarProperty Name="ma_vv" ColumnName="ma_vv" />
+            <ScalarProperty Name="ma_sp" ColumnName="ma_sp" />
+            <ScalarProperty Name="ma_bp" ColumnName="ma_bp" />
+            <ScalarProperty Name="so_lsx" ColumnName="so_lsx" />
+            <ScalarProperty Name="ma_hd" ColumnName="ma_hd" />
+            <ScalarProperty Name="ma_ku" ColumnName="ma_ku" />
+            <ScalarProperty Name="ma_phi" ColumnName="ma_phi" />
+            <ScalarProperty Name="so_dh2" ColumnName="so_dh2" />
+            <ScalarProperty Name="so_dh3" ColumnName="so_dh3" />
+            <ScalarProperty Name="ma_nvbh" ColumnName="ma_nvbh" />
+            <ScalarProperty Name="ma_nv" ColumnName="ma_nv" />
+            <ScalarProperty Name="ma_nx" ColumnName="ma_nx" />
+            <ScalarProperty Name="tk_du" ColumnName="tk_du" />
+            <ScalarProperty Name="ma_nt" ColumnName="ma_nt" />
+            <ScalarProperty Name="ty_gia" ColumnName="ty_gia" />
+            <ScalarProperty Name="ma_vt" ColumnName="ma_vt" />
+            <ScalarProperty Name="ma_lo" ColumnName="ma_lo" />
+            <ScalarProperty Name="dvt1" ColumnName="dvt1" />
+            <ScalarProperty Name="sl_nhap1" ColumnName="sl_nhap1" />
+            <ScalarProperty Name="sl_xuat1" ColumnName="sl_xuat1" />
+            <ScalarProperty Name="he_so1" ColumnName="he_so1" />
+            <ScalarProperty Name="gia_nt1" ColumnName="gia_nt1" />
+            <ScalarProperty Name="gia1" ColumnName="gia1" />
+            <ScalarProperty Name="gia01" ColumnName="gia01" />
+            <ScalarProperty Name="gia_nt01" ColumnName="gia_nt01" />
+            <ScalarProperty Name="gia21" ColumnName="gia21" />
+            <ScalarProperty Name="gia_nt21" ColumnName="gia_nt21" />
+            <ScalarProperty Name="tk_vt" ColumnName="tk_vt" />
+            <ScalarProperty Name="tk_gv" ColumnName="tk_gv" />
+            <ScalarProperty Name="tk_dt" ColumnName="tk_dt" />
+            <ScalarProperty Name="sl_nhap" ColumnName="sl_nhap" />
+            <ScalarProperty Name="sl_xuat" ColumnName="sl_xuat" />
+            <ScalarProperty Name="gia_nt" ColumnName="gia_nt" />
+            <ScalarProperty Name="gia" ColumnName="gia" />
+            <ScalarProperty Name="tien_nt_n" ColumnName="tien_nt_n" />
+            <ScalarProperty Name="tien_nt_x" ColumnName="tien_nt_x" />
+            <ScalarProperty Name="tien_nhap" ColumnName="tien_nhap" />
+            <ScalarProperty Name="tien_xuat" ColumnName="tien_xuat" />
+            <ScalarProperty Name="gia_nt0" ColumnName="gia_nt0" />
+            <ScalarProperty Name="gia0" ColumnName="gia0" />
+            <ScalarProperty Name="tien_nt0" ColumnName="tien_nt0" />
+            <ScalarProperty Name="tien0" ColumnName="tien0" />
+            <ScalarProperty Name="cp_vc" ColumnName="cp_vc" />
+            <ScalarProperty Name="cp_vc_nt" ColumnName="cp_vc_nt" />
+            <ScalarProperty Name="cp_bh" ColumnName="cp_bh" />
+            <ScalarProperty Name="cp_bh_nt" ColumnName="cp_bh_nt" />
+            <ScalarProperty Name="cp_khac" ColumnName="cp_khac" />
+            <ScalarProperty Name="cp_khac_nt" ColumnName="cp_khac_nt" />
+            <ScalarProperty Name="cp_nt" ColumnName="cp_nt" />
+            <ScalarProperty Name="cp" ColumnName="cp" />
+            <ScalarProperty Name="thue_suat_nk" ColumnName="thue_suat_nk" />
+            <ScalarProperty Name="nk_nt" ColumnName="nk_nt" />
+            <ScalarProperty Name="nk" ColumnName="nk" />
+            <ScalarProperty Name="tk_thue_nk" ColumnName="tk_thue_nk" />
+            <ScalarProperty Name="thue_suat_ttdb" ColumnName="thue_suat_ttdb" />
+            <ScalarProperty Name="ttdb_nt" ColumnName="ttdb_nt" />
+            <ScalarProperty Name="ttdb" ColumnName="ttdb" />
+            <ScalarProperty Name="tk_thue_ttdb" ColumnName="tk_thue_ttdb" />
+            <ScalarProperty Name="gia_nt2" ColumnName="gia_nt2" />
+            <ScalarProperty Name="gia2" ColumnName="gia2" />
+            <ScalarProperty Name="tien_nt2" ColumnName="tien_nt2" />
+            <ScalarProperty Name="tien2" ColumnName="tien2" />
+            <ScalarProperty Name="ma_tt" ColumnName="ma_tt" />
+            <ScalarProperty Name="cp_thue_yn" ColumnName="cp_thue_yn" />
+            <ScalarProperty Name="thue_suat" ColumnName="thue_suat" />
+            <ScalarProperty Name="thue_nt" ColumnName="thue_nt" />
+            <ScalarProperty Name="thue" ColumnName="thue" />
+            <ScalarProperty Name="tk_thue_no" ColumnName="tk_thue_no" />
+            <ScalarProperty Name="tk_thue_co" ColumnName="tk_thue_co" />
+            <ScalarProperty Name="ck_nt" ColumnName="ck_nt" />
+            <ScalarProperty Name="ck" ColumnName="ck" />
+            <ScalarProperty Name="tk_ck" ColumnName="tk_ck" />
+            <ScalarProperty Name="stt_rec_pn" ColumnName="stt_rec_pn" />
+            <ScalarProperty Name="stt_rec0pn" ColumnName="stt_rec0pn" />
+            <ScalarProperty Name="stt_rec_px" ColumnName="stt_rec_px" />
+            <ScalarProperty Name="stt_rec0px" ColumnName="stt_rec0px" />
+            <ScalarProperty Name="stt_rec_dc" ColumnName="stt_rec_dc" />
+            <ScalarProperty Name="stt_rec_yc" ColumnName="stt_rec_yc" />
+            <ScalarProperty Name="stt_rec0yc" ColumnName="stt_rec0yc" />
+            <ScalarProperty Name="ngay_ct0" ColumnName="ngay_ct0" />
+            <ScalarProperty Name="so_ct0" ColumnName="so_ct0" />
+            <ScalarProperty Name="so_seri0" ColumnName="so_seri0" />
+            <ScalarProperty Name="nam" ColumnName="nam" />
+            <ScalarProperty Name="ky" ColumnName="ky" />
+            <ScalarProperty Name="line_nbr" ColumnName="line_nbr" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="datetime0" ColumnName="datetime0" />
+            <ScalarProperty Name="datetime2" ColumnName="datetime2" />
+            <ScalarProperty Name="user_id0" ColumnName="user_id0" />
+            <ScalarProperty Name="user_id2" ColumnName="user_id2" />
+            <ScalarProperty Name="ma_td1" ColumnName="ma_td1" />
+            <ScalarProperty Name="ma_td2" ColumnName="ma_td2" />
+            <ScalarProperty Name="ma_td3" ColumnName="ma_td3" />
+            <ScalarProperty Name="sl_td1" ColumnName="sl_td1" />
+            <ScalarProperty Name="sl_td2" ColumnName="sl_td2" />
+            <ScalarProperty Name="sl_td3" ColumnName="sl_td3" />
+            <ScalarProperty Name="ngay_td1" ColumnName="ngay_td1" />
+            <ScalarProperty Name="ngay_td2" ColumnName="ngay_td2" />
+            <ScalarProperty Name="ngay_td3" ColumnName="ngay_td3" />
+            <ScalarProperty Name="gc_td1" ColumnName="gc_td1" />
+            <ScalarProperty Name="gc_td2" ColumnName="gc_td2" />
+            <ScalarProperty Name="gc_td3" ColumnName="gc_td3" />
+            <ScalarProperty Name="s1" ColumnName="s1" />
+            <ScalarProperty Name="s2" ColumnName="s2" />
+            <ScalarProperty Name="s3" ColumnName="s3" />
+            <ScalarProperty Name="s4" ColumnName="s4" />
+            <ScalarProperty Name="s5" ColumnName="s5" />
+            <ScalarProperty Name="s6" ColumnName="s6" />
+            <ScalarProperty Name="s7" ColumnName="s7" />
+            <ScalarProperty Name="s8" ColumnName="s8" />
+            <ScalarProperty Name="s9" ColumnName="s9" />
+            <ScalarProperty Name="is_giaban_co_vat" ColumnName="is_giaban_co_vat" />
+            <ScalarProperty Name="tl_ck" ColumnName="tl_ck" />
+            <ScalarProperty Name="ma_httt" ColumnName="ma_httt" />
+            <ScalarProperty Name="ma_kho_kg" ColumnName="ma_kho_kg" />
+            <ScalarProperty Name="is_ck_co_vat" ColumnName="is_ck_co_vat" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ct71"><EntityTypeMapping TypeName="AppModel.ct71"><MappingFragment StoreEntitySet="ct71">
+            <ScalarProperty Name="stt_rec" ColumnName="stt_rec" />
+            <ScalarProperty Name="stt_rec0" ColumnName="stt_rec0" />
+            <ScalarProperty Name="ma_ct" ColumnName="ma_ct" />
+            <ScalarProperty Name="ngay_ct" ColumnName="ngay_ct" />
+            <ScalarProperty Name="so_ct" ColumnName="so_ct" />
+            <ScalarProperty Name="ma_vt" ColumnName="ma_vt" />
+            <ScalarProperty Name="ma_sp" ColumnName="ma_sp" />
+            <ScalarProperty Name="ma_bp" ColumnName="ma_bp" />
+            <ScalarProperty Name="so_lsx" ColumnName="so_lsx" />
+            <ScalarProperty Name="dvt" ColumnName="dvt" />
+            <ScalarProperty Name="he_so" ColumnName="he_so" />
+            <ScalarProperty Name="ma_kho" ColumnName="ma_kho" />
+            <ScalarProperty Name="ma_vi_tri" ColumnName="ma_vi_tri" />
+            <ScalarProperty Name="ma_lo" ColumnName="ma_lo" />
+            <ScalarProperty Name="ma_vv" ColumnName="ma_vv" />
+            <ScalarProperty Name="tk_vt" ColumnName="tk_vt" />
+            <ScalarProperty Name="so_luong" ColumnName="so_luong" />
+            <ScalarProperty Name="gia_nt" ColumnName="gia_nt" />
+            <ScalarProperty Name="gia" ColumnName="gia" />
+            <ScalarProperty Name="gia_nt0" ColumnName="gia_nt0" />
+            <ScalarProperty Name="gia0" ColumnName="gia0" />
+            <ScalarProperty Name="tien_nt" ColumnName="tien_nt" />
+            <ScalarProperty Name="tien" ColumnName="tien" />
+            <ScalarProperty Name="ma_thue" ColumnName="ma_thue" />
+            <ScalarProperty Name="tk_thue" ColumnName="tk_thue" />
+            <ScalarProperty Name="thue_suat" ColumnName="thue_suat" />
+            <ScalarProperty Name="thue" ColumnName="thue" />
+            <ScalarProperty Name="thue_nt" ColumnName="thue_nt" />
+            <ScalarProperty Name="tt" ColumnName="tt" />
+            <ScalarProperty Name="tt_nt" ColumnName="tt_nt" />
+            <ScalarProperty Name="xstatus" ColumnName="xstatus" />
+            <ScalarProperty Name="xaction" ColumnName="xaction" />
+            <ScalarProperty Name="tien0" ColumnName="tien0" />
+            <ScalarProperty Name="tien_nt0" ColumnName="tien_nt0" />
+            <ScalarProperty Name="ma_thue_nk" ColumnName="ma_thue_nk" />
+            <ScalarProperty Name="thue_suat_nk" ColumnName="thue_suat_nk" />
+            <ScalarProperty Name="tk_thue_nk" ColumnName="tk_thue_nk" />
+            <ScalarProperty Name="nk" ColumnName="nk" />
+            <ScalarProperty Name="nk_nt" ColumnName="nk_nt" />
+            <ScalarProperty Name="ma_thue_ttdb" ColumnName="ma_thue_ttdb" />
+            <ScalarProperty Name="thue_suat_ttdb" ColumnName="thue_suat_ttdb" />
+            <ScalarProperty Name="tk_thue_ttdb" ColumnName="tk_thue_ttdb" />
+            <ScalarProperty Name="ttdb" ColumnName="ttdb" />
+            <ScalarProperty Name="ttdb_nt" ColumnName="ttdb_nt" />
+            <ScalarProperty Name="cp_bh" ColumnName="cp_bh" />
+            <ScalarProperty Name="cp_bh_nt" ColumnName="cp_bh_nt" />
+            <ScalarProperty Name="cp_vc" ColumnName="cp_vc" />
+            <ScalarProperty Name="cp_vc_nt" ColumnName="cp_vc_nt" />
+            <ScalarProperty Name="cp_khac" ColumnName="cp_khac" />
+            <ScalarProperty Name="cp_khac_nt" ColumnName="cp_khac_nt" />
+            <ScalarProperty Name="cp" ColumnName="cp" />
+            <ScalarProperty Name="cp_nt" ColumnName="cp_nt" />
+            <ScalarProperty Name="stt_rec_ct" ColumnName="stt_rec_ct" />
+            <ScalarProperty Name="stt_rec0ct" ColumnName="stt_rec0ct" />
+            <ScalarProperty Name="stt_rec_dh" ColumnName="stt_rec_dh" />
+            <ScalarProperty Name="stt_rec0dh" ColumnName="stt_rec0dh" />
+            <ScalarProperty Name="stt_rec_pn" ColumnName="stt_rec_pn" />
+            <ScalarProperty Name="stt_rec0pn" ColumnName="stt_rec0pn" />
+            <ScalarProperty Name="tien_hang" ColumnName="tien_hang" />
+            <ScalarProperty Name="tien_hang_nt" ColumnName="tien_hang_nt" />
+            <ScalarProperty Name="line_nbr" ColumnName="line_nbr" />
+            <ScalarProperty Name="ma_hd" ColumnName="ma_hd" />
+            <ScalarProperty Name="ma_ku" ColumnName="ma_ku" />
+            <ScalarProperty Name="ma_phi" ColumnName="ma_phi" />
+            <ScalarProperty Name="so_dh_i" ColumnName="so_dh_i" />
+            <ScalarProperty Name="ma_td1" ColumnName="ma_td1" />
+            <ScalarProperty Name="ma_td2" ColumnName="ma_td2" />
+            <ScalarProperty Name="ma_td3" ColumnName="ma_td3" />
+            <ScalarProperty Name="sl_td1" ColumnName="sl_td1" />
+            <ScalarProperty Name="sl_td2" ColumnName="sl_td2" />
+            <ScalarProperty Name="sl_td3" ColumnName="sl_td3" />
+            <ScalarProperty Name="ngay_td1" ColumnName="ngay_td1" />
+            <ScalarProperty Name="ngay_td2" ColumnName="ngay_td2" />
+            <ScalarProperty Name="ngay_td3" ColumnName="ngay_td3" />
+            <ScalarProperty Name="gc_td1" ColumnName="gc_td1" />
+            <ScalarProperty Name="gc_td2" ColumnName="gc_td2" />
+            <ScalarProperty Name="gc_td3" ColumnName="gc_td3" />
+            <ScalarProperty Name="s1" ColumnName="s1" />
+            <ScalarProperty Name="s2" ColumnName="s2" />
+            <ScalarProperty Name="s3" ColumnName="s3" />
+            <ScalarProperty Name="s4" ColumnName="s4" />
+            <ScalarProperty Name="s5" ColumnName="s5" />
+            <ScalarProperty Name="s6" ColumnName="s6" />
+            <ScalarProperty Name="s7" ColumnName="s7" />
+            <ScalarProperty Name="s8" ColumnName="s8" />
+            <ScalarProperty Name="s9" ColumnName="s9" />
+            <ScalarProperty Name="ma_kho_kg" ColumnName="ma_kho_kg" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ct81"><EntityTypeMapping TypeName="AppModel.ct81"><MappingFragment StoreEntitySet="ct81">
+            <ScalarProperty Name="stt_rec" ColumnName="stt_rec" />
+            <ScalarProperty Name="stt_rec0" ColumnName="stt_rec0" />
+            <ScalarProperty Name="ma_ct" ColumnName="ma_ct" />
+            <ScalarProperty Name="ngay_ct" ColumnName="ngay_ct" />
+            <ScalarProperty Name="so_ct" ColumnName="so_ct" />
+            <ScalarProperty Name="ma_vt" ColumnName="ma_vt" />
+            <ScalarProperty Name="km_yn" ColumnName="km_yn" />
+            <ScalarProperty Name="ma_sp" ColumnName="ma_sp" />
+            <ScalarProperty Name="ma_bp" ColumnName="ma_bp" />
+            <ScalarProperty Name="so_lsx" ColumnName="so_lsx" />
+            <ScalarProperty Name="dvt" ColumnName="dvt" />
+            <ScalarProperty Name="he_so" ColumnName="he_so" />
+            <ScalarProperty Name="ma_kho" ColumnName="ma_kho" />
+            <ScalarProperty Name="ma_vi_tri" ColumnName="ma_vi_tri" />
+            <ScalarProperty Name="ma_lo" ColumnName="ma_lo" />
+            <ScalarProperty Name="ma_vv" ColumnName="ma_vv" />
+            <ScalarProperty Name="tk_vt" ColumnName="tk_vt" />
+            <ScalarProperty Name="so_luong" ColumnName="so_luong" />
+            <ScalarProperty Name="gia_nt" ColumnName="gia_nt" />
+            <ScalarProperty Name="gia" ColumnName="gia" />
+            <ScalarProperty Name="gia_nt2" ColumnName="gia_nt2" />
+            <ScalarProperty Name="gia2" ColumnName="gia2" />
+            <ScalarProperty Name="tien_nt" ColumnName="tien_nt" />
+            <ScalarProperty Name="tien" ColumnName="tien" />
+            <ScalarProperty Name="thue" ColumnName="thue" />
+            <ScalarProperty Name="thue_nt" ColumnName="thue_nt" />
+            <ScalarProperty Name="tt" ColumnName="tt" />
+            <ScalarProperty Name="tt_nt" ColumnName="tt_nt" />
+            <ScalarProperty Name="xstatus" ColumnName="xstatus" />
+            <ScalarProperty Name="xaction" ColumnName="xaction" />
+            <ScalarProperty Name="tien2" ColumnName="tien2" />
+            <ScalarProperty Name="tien_nt2" ColumnName="tien_nt2" />
+            <ScalarProperty Name="cp_bh" ColumnName="cp_bh" />
+            <ScalarProperty Name="cp_bh_nt" ColumnName="cp_bh_nt" />
+            <ScalarProperty Name="cp_vc" ColumnName="cp_vc" />
+            <ScalarProperty Name="cp_vc_nt" ColumnName="cp_vc_nt" />
+            <ScalarProperty Name="cp_khac" ColumnName="cp_khac" />
+            <ScalarProperty Name="cp_khac_nt" ColumnName="cp_khac_nt" />
+            <ScalarProperty Name="cp" ColumnName="cp" />
+            <ScalarProperty Name="cp_nt" ColumnName="cp_nt" />
+            <ScalarProperty Name="stt_rec_ct" ColumnName="stt_rec_ct" />
+            <ScalarProperty Name="stt_rec0ct" ColumnName="stt_rec0ct" />
+            <ScalarProperty Name="gia_ban0" ColumnName="gia_ban0" />
+            <ScalarProperty Name="gia_ban_nt0" ColumnName="gia_ban_nt0" />
+            <ScalarProperty Name="gia_ban" ColumnName="gia_ban" />
+            <ScalarProperty Name="gia_ban_nt" ColumnName="gia_ban_nt" />
+            <ScalarProperty Name="gia_ck" ColumnName="gia_ck" />
+            <ScalarProperty Name="gia_ck_nt" ColumnName="gia_ck_nt" />
+            <ScalarProperty Name="ck" ColumnName="ck" />
+            <ScalarProperty Name="ck_nt" ColumnName="ck_nt" />
+            <ScalarProperty Name="sl_dh" ColumnName="sl_dh" />
+            <ScalarProperty Name="sl_xuat" ColumnName="sl_xuat" />
+            <ScalarProperty Name="sl_giao" ColumnName="sl_giao" />
+            <ScalarProperty Name="stt_rec_dh" ColumnName="stt_rec_dh" />
+            <ScalarProperty Name="stt_rec0dh" ColumnName="stt_rec0dh" />
+            <ScalarProperty Name="stt_rec_px" ColumnName="stt_rec_px" />
+            <ScalarProperty Name="stt_rec0px" ColumnName="stt_rec0px" />
+            <ScalarProperty Name="stt_rec_gh" ColumnName="stt_rec_gh" />
+            <ScalarProperty Name="stt_rec0gh" ColumnName="stt_rec0gh" />
+            <ScalarProperty Name="stt_rec_pn" ColumnName="stt_rec_pn" />
+            <ScalarProperty Name="stt_rec0pn" ColumnName="stt_rec0pn" />
+            <ScalarProperty Name="tk_gv" ColumnName="tk_gv" />
+            <ScalarProperty Name="tk_dt" ColumnName="tk_dt" />
+            <ScalarProperty Name="tk_ck" ColumnName="tk_ck" />
+            <ScalarProperty Name="tk_cpbh" ColumnName="tk_cpbh" />
+            <ScalarProperty Name="px_gia_dd" ColumnName="px_gia_dd" />
+            <ScalarProperty Name="ma_nvbh_i" ColumnName="ma_nvbh_i" />
+            <ScalarProperty Name="line_nbr" ColumnName="line_nbr" />
+            <ScalarProperty Name="ma_hd" ColumnName="ma_hd" />
+            <ScalarProperty Name="ma_ku" ColumnName="ma_ku" />
+            <ScalarProperty Name="ma_phi" ColumnName="ma_phi" />
+            <ScalarProperty Name="so_dh_i" ColumnName="so_dh_i" />
+            <ScalarProperty Name="ma_td1" ColumnName="ma_td1" />
+            <ScalarProperty Name="ma_td2" ColumnName="ma_td2" />
+            <ScalarProperty Name="ma_td3" ColumnName="ma_td3" />
+            <ScalarProperty Name="sl_td1" ColumnName="sl_td1" />
+            <ScalarProperty Name="sl_td2" ColumnName="sl_td2" />
+            <ScalarProperty Name="sl_td3" ColumnName="sl_td3" />
+            <ScalarProperty Name="ngay_td1" ColumnName="ngay_td1" />
+            <ScalarProperty Name="ngay_td2" ColumnName="ngay_td2" />
+            <ScalarProperty Name="ngay_td3" ColumnName="ngay_td3" />
+            <ScalarProperty Name="gc_td1" ColumnName="gc_td1" />
+            <ScalarProperty Name="gc_td2" ColumnName="gc_td2" />
+            <ScalarProperty Name="gc_td3" ColumnName="gc_td3" />
+            <ScalarProperty Name="s1" ColumnName="s1" />
+            <ScalarProperty Name="s2" ColumnName="s2" />
+            <ScalarProperty Name="s3" ColumnName="s3" />
+            <ScalarProperty Name="s4" ColumnName="s4" />
+            <ScalarProperty Name="s5" ColumnName="s5" />
+            <ScalarProperty Name="s6" ColumnName="s6" />
+            <ScalarProperty Name="s7" ColumnName="s7" />
+            <ScalarProperty Name="s8" ColumnName="s8" />
+            <ScalarProperty Name="s9" ColumnName="s9" />
+            <ScalarProperty Name="is_giaban_co_vat" ColumnName="is_giaban_co_vat" />
+            <ScalarProperty Name="tl_ck" ColumnName="tl_ck" />
+            <ScalarProperty Name="is_ck_co_vat" ColumnName="is_ck_co_vat" />
+            <ScalarProperty Name="ma_thue" ColumnName="ma_thue" />
+            <ScalarProperty Name="thue_suat" ColumnName="thue_suat" />
+            <ScalarProperty Name="tk_thue" ColumnName="tk_thue" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="dmcts"><EntityTypeMapping TypeName="AppModel.dmct"><MappingFragment StoreEntitySet="dmct">
+            <ScalarProperty Name="ma_phan_he" ColumnName="ma_phan_he" />
+            <ScalarProperty Name="ma_ct" ColumnName="ma_ct" />
+            <ScalarProperty Name="ten_ct" ColumnName="ten_ct" />
+            <ScalarProperty Name="ten_ct2" ColumnName="ten_ct2" />
+            <ScalarProperty Name="ma_ct_me" ColumnName="ma_ct_me" />
+            <ScalarProperty Name="so_ct" ColumnName="so_ct" />
+            <ScalarProperty Name="ma_nt" ColumnName="ma_nt" />
+            <ScalarProperty Name="ma_ct_in" ColumnName="ma_ct_in" />
+            <ScalarProperty Name="so_lien" ColumnName="so_lien" />
+            <ScalarProperty Name="tieu_de_ct" ColumnName="tieu_de_ct" />
+            <ScalarProperty Name="tieu_de_ct2" ColumnName="tieu_de_ct2" />
+            <ScalarProperty Name="stt_ct_nkc" ColumnName="stt_ct_nkc" />
+            <ScalarProperty Name="stt_ctntxt" ColumnName="stt_ctntxt" />
+            <ScalarProperty Name="ct_nxt" ColumnName="ct_nxt" />
+            <ScalarProperty Name="m_ctdbf" ColumnName="m_ctdbf" />
+            <ScalarProperty Name="m_phdbf" ColumnName="m_phdbf" />
+            <ScalarProperty Name="post_type" ColumnName="post_type" />
+            <ScalarProperty Name="dk_ctgs" ColumnName="dk_ctgs" />
+            <ScalarProperty Name="stt" ColumnName="stt" />
+            <ScalarProperty Name="max_row" ColumnName="max_row" />
+            <ScalarProperty Name="v_nbr_blank_yn" ColumnName="v_nbr_blank_yn" />
+            <ScalarProperty Name="v_nbr_unit_yn" ColumnName="v_nbr_unit_yn" />
+            <ScalarProperty Name="v_nbr_user_yn" ColumnName="v_nbr_user_yn" />
+            <ScalarProperty Name="v_nbr_auto_yn" ColumnName="v_nbr_auto_yn" />
+            <ScalarProperty Name="v_nbr_fields" ColumnName="v_nbr_fields" />
+            <ScalarProperty Name="m_status" ColumnName="m_status" />
+            <ScalarProperty Name="m_ma_nk" ColumnName="m_ma_nk" />
+            <ScalarProperty Name="m_ma_gd" ColumnName="m_ma_gd" />
+            <ScalarProperty Name="m_loai_ct" ColumnName="m_loai_ct" />
+            <ScalarProperty Name="m_ma_td1" ColumnName="m_ma_td1" />
+            <ScalarProperty Name="m_ma_td2" ColumnName="m_ma_td2" />
+            <ScalarProperty Name="m_ma_td3" ColumnName="m_ma_td3" />
+            <ScalarProperty Name="m_sl_ct0" ColumnName="m_sl_ct0" />
+            <ScalarProperty Name="m_trung_so" ColumnName="m_trung_so" />
+            <ScalarProperty Name="m_loc_nsd" ColumnName="m_loc_nsd" />
+            <ScalarProperty Name="m_ong_ba" ColumnName="m_ong_ba" />
+            <ScalarProperty Name="m_ngay_ct" ColumnName="m_ngay_ct" />
+            <ScalarProperty Name="m_phdbfs" ColumnName="m_phdbfs" />
+            <ScalarProperty Name="m_ctdbfs" ColumnName="m_ctdbfs" />
+            <ScalarProperty Name="post_vv" ColumnName="post_vv" />
+            <ScalarProperty Name="post_sp" ColumnName="post_sp" />
+            <ScalarProperty Name="post_bp" ColumnName="post_bp" />
+            <ScalarProperty Name="post_hd" ColumnName="post_hd" />
+            <ScalarProperty Name="post_ku" ColumnName="post_ku" />
+            <ScalarProperty Name="post_phi" ColumnName="post_phi" />
+            <ScalarProperty Name="post_lsx" ColumnName="post_lsx" />
+            <ScalarProperty Name="post_td1" ColumnName="post_td1" />
+            <ScalarProperty Name="post_td2" ColumnName="post_td2" />
+            <ScalarProperty Name="post_td3" ColumnName="post_td3" />
+            <ScalarProperty Name="voucher_yn" ColumnName="voucher_yn" />
+            <ScalarProperty Name="fs_post" ColumnName="fs_post" />
+            <ScalarProperty Name="xstatus" ColumnName="xstatus" />
+            <ScalarProperty Name="xgl" ColumnName="xgl" />
+            <ScalarProperty Name="xin" ColumnName="xin" />
+            <ScalarProperty Name="xin_type" ColumnName="xin_type" />
+            <ScalarProperty Name="xin_p_update" ColumnName="xin_p_update" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="datetime0" ColumnName="datetime0" />
+            <ScalarProperty Name="datetime2" ColumnName="datetime2" />
+            <ScalarProperty Name="user_id0" ColumnName="user_id0" />
+            <ScalarProperty Name="user_id2" ColumnName="user_id2" />
+            <ScalarProperty Name="ma_td1" ColumnName="ma_td1" />
+            <ScalarProperty Name="ma_td2" ColumnName="ma_td2" />
+            <ScalarProperty Name="ma_td3" ColumnName="ma_td3" />
+            <ScalarProperty Name="sl_td1" ColumnName="sl_td1" />
+            <ScalarProperty Name="sl_td2" ColumnName="sl_td2" />
+            <ScalarProperty Name="sl_td3" ColumnName="sl_td3" />
+            <ScalarProperty Name="ngay_td1" ColumnName="ngay_td1" />
+            <ScalarProperty Name="ngay_td2" ColumnName="ngay_td2" />
+            <ScalarProperty Name="ngay_td3" ColumnName="ngay_td3" />
+            <ScalarProperty Name="gc_td1" ColumnName="gc_td1" />
+            <ScalarProperty Name="gc_td2" ColumnName="gc_td2" />
+            <ScalarProperty Name="gc_td3" ColumnName="gc_td3" />
+            <ScalarProperty Name="s1" ColumnName="s1" />
+            <ScalarProperty Name="s2" ColumnName="s2" />
+            <ScalarProperty Name="s3" ColumnName="s3" />
+            <ScalarProperty Name="s4" ColumnName="s4" />
+            <ScalarProperty Name="s5" ColumnName="s5" />
+            <ScalarProperty Name="s6" ColumnName="s6" />
+            <ScalarProperty Name="s7" ColumnName="s7" />
+            <ScalarProperty Name="s8" ColumnName="s8" />
+            <ScalarProperty Name="s9" ColumnName="s9" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="dmkhs"><EntityTypeMapping TypeName="AppModel.dmkh"><MappingFragment StoreEntitySet="dmkh">
+            <ScalarProperty Name="ma_kh" ColumnName="ma_kh" />
+            <ScalarProperty Name="ten_kh" ColumnName="ten_kh" />
+            <ScalarProperty Name="ten_kh2" ColumnName="ten_kh2" />
+            <ScalarProperty Name="kh_yn" ColumnName="kh_yn" />
+            <ScalarProperty Name="cc_yn" ColumnName="cc_yn" />
+            <ScalarProperty Name="nv_yn" ColumnName="nv_yn" />
+            <ScalarProperty Name="ma_so_thue" ColumnName="ma_so_thue" />
+            <ScalarProperty Name="dia_chi" ColumnName="dia_chi" />
+            <ScalarProperty Name="dien_thoai" ColumnName="dien_thoai" />
+            <ScalarProperty Name="fax" ColumnName="fax" />
+            <ScalarProperty Name="e_mail" ColumnName="e_mail" />
+            <ScalarProperty Name="home_page" ColumnName="home_page" />
+            <ScalarProperty Name="doi_tac" ColumnName="doi_tac" />
+            <ScalarProperty Name="ong_ba" ColumnName="ong_ba" />
+            <ScalarProperty Name="ma_nvbh" ColumnName="ma_nvbh" />
+            <ScalarProperty Name="ngan_hang" ColumnName="ngan_hang" />
+            <ScalarProperty Name="tk_nh" ColumnName="tk_nh" />
+            <ScalarProperty Name="tinh_thanh" ColumnName="tinh_thanh" />
+            <ScalarProperty Name="ghi_chu" ColumnName="ghi_chu" />
+            <ScalarProperty Name="ma_tt" ColumnName="ma_tt" />
+            <ScalarProperty Name="tk" ColumnName="tk" />
+            <ScalarProperty Name="nh_kh1" ColumnName="nh_kh1" />
+            <ScalarProperty Name="nh_kh2" ColumnName="nh_kh2" />
+            <ScalarProperty Name="nh_kh3" ColumnName="nh_kh3" />
+            <ScalarProperty Name="nh_kh9" ColumnName="nh_kh9" />
+            <ScalarProperty Name="du_nt13" ColumnName="du_nt13" />
+            <ScalarProperty Name="du13" ColumnName="du13" />
+            <ScalarProperty Name="t_tien_cn" ColumnName="t_tien_cn" />
+            <ScalarProperty Name="t_tien_hd" ColumnName="t_tien_hd" />
+            <ScalarProperty Name="ngay_gh" ColumnName="ngay_gh" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="datetime0" ColumnName="datetime0" />
+            <ScalarProperty Name="datetime2" ColumnName="datetime2" />
+            <ScalarProperty Name="user_id0" ColumnName="user_id0" />
+            <ScalarProperty Name="user_id2" ColumnName="user_id2" />
+            <ScalarProperty Name="ma_td1" ColumnName="ma_td1" />
+            <ScalarProperty Name="ma_td2" ColumnName="ma_td2" />
+            <ScalarProperty Name="ma_td3" ColumnName="ma_td3" />
+            <ScalarProperty Name="sl_td1" ColumnName="sl_td1" />
+            <ScalarProperty Name="sl_td2" ColumnName="sl_td2" />
+            <ScalarProperty Name="sl_td3" ColumnName="sl_td3" />
+            <ScalarProperty Name="ngay_td1" ColumnName="ngay_td1" />
+            <ScalarProperty Name="ngay_td2" ColumnName="ngay_td2" />
+            <ScalarProperty Name="ngay_td3" ColumnName="ngay_td3" />
+            <ScalarProperty Name="gc_td1" ColumnName="gc_td1" />
+            <ScalarProperty Name="gc_td2" ColumnName="gc_td2" />
+            <ScalarProperty Name="gc_td3" ColumnName="gc_td3" />
+            <ScalarProperty Name="s1" ColumnName="s1" />
+            <ScalarProperty Name="s2" ColumnName="s2" />
+            <ScalarProperty Name="s3" ColumnName="s3" />
+            <ScalarProperty Name="s4" ColumnName="s4" />
+            <ScalarProperty Name="s5" ColumnName="s5" />
+            <ScalarProperty Name="s6" ColumnName="s6" />
+            <ScalarProperty Name="s7" ColumnName="s7" />
+            <ScalarProperty Name="s8" ColumnName="s8" />
+            <ScalarProperty Name="s9" ColumnName="s9" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="dmvts"><EntityTypeMapping TypeName="AppModel.dmvt"><MappingFragment StoreEntitySet="dmvt">
+            <ScalarProperty Name="ma_vt" ColumnName="ma_vt" />
+            <ScalarProperty Name="ma_vt2" ColumnName="ma_vt2" />
+            <ScalarProperty Name="ten_vt" ColumnName="ten_vt" />
+            <ScalarProperty Name="ten_vt2" ColumnName="ten_vt2" />
+            <ScalarProperty Name="dvt" ColumnName="dvt" />
+            <ScalarProperty Name="nhieu_dvt" ColumnName="nhieu_dvt" />
+            <ScalarProperty Name="dvt2" ColumnName="dvt2" />
+            <ScalarProperty Name="dvt3" ColumnName="dvt3" />
+            <ScalarProperty Name="vt_ton_kho" ColumnName="vt_ton_kho" />
+            <ScalarProperty Name="gia_ton" ColumnName="gia_ton" />
+            <ScalarProperty Name="loai_vt" ColumnName="loai_vt" />
+            <ScalarProperty Name="nh_vt1" ColumnName="nh_vt1" />
+            <ScalarProperty Name="nh_vt2" ColumnName="nh_vt2" />
+            <ScalarProperty Name="nh_vt3" ColumnName="nh_vt3" />
+            <ScalarProperty Name="nh_vt9" ColumnName="nh_vt9" />
+            <ScalarProperty Name="abc_code" ColumnName="abc_code" />
+            <ScalarProperty Name="nguon" ColumnName="nguon" />
+            <ScalarProperty Name="lo_yn" ColumnName="lo_yn" />
+            <ScalarProperty Name="ma_kho" ColumnName="ma_kho" />
+            <ScalarProperty Name="ma_vi_tri" ColumnName="ma_vi_tri" />
+            <ScalarProperty Name="ma_thue" ColumnName="ma_thue" />
+            <ScalarProperty Name="ma_thue_nk" ColumnName="ma_thue_nk" />
+            <ScalarProperty Name="kk_yn" ColumnName="kk_yn" />
+            <ScalarProperty Name="sl_min" ColumnName="sl_min" />
+            <ScalarProperty Name="sl_max" ColumnName="sl_max" />
+            <ScalarProperty Name="tk_vt" ColumnName="tk_vt" />
+            <ScalarProperty Name="sua_tk_vt" ColumnName="sua_tk_vt" />
+            <ScalarProperty Name="tk_gv" ColumnName="tk_gv" />
+            <ScalarProperty Name="tk_dt" ColumnName="tk_dt" />
+            <ScalarProperty Name="tk_dtnb" ColumnName="tk_dtnb" />
+            <ScalarProperty Name="tk_tl" ColumnName="tk_tl" />
+            <ScalarProperty Name="tk_dl" ColumnName="tk_dl" />
+            <ScalarProperty Name="tk_spdd" ColumnName="tk_spdd" />
+            <ScalarProperty Name="tk_cl_vt" ColumnName="tk_cl_vt" />
+            <ScalarProperty Name="tk_ck" ColumnName="tk_ck" />
+            <ScalarProperty Name="tk_cpbh" ColumnName="tk_cpbh" />
+            <ScalarProperty Name="kieu_lo" ColumnName="kieu_lo" />
+            <ScalarProperty Name="cach_xuat" ColumnName="cach_xuat" />
+            <ScalarProperty Name="so_ngay_sp" ColumnName="so_ngay_sp" />
+            <ScalarProperty Name="so_ngay_bh" ColumnName="so_ngay_bh" />
+            <ScalarProperty Name="ong_ba" ColumnName="ong_ba" />
+            <ScalarProperty Name="ma_kh0" ColumnName="ma_kh0" />
+            <ScalarProperty Name="ma_kh2" ColumnName="ma_kh2" />
+            <ScalarProperty Name="ma_kh" ColumnName="ma_kh" />
+            <ScalarProperty Name="height" ColumnName="height" />
+            <ScalarProperty Name="length" ColumnName="length" />
+            <ScalarProperty Name="volume" ColumnName="volume" />
+            <ScalarProperty Name="weight" ColumnName="weight" />
+            <ScalarProperty Name="width" ColumnName="width" />
+            <ScalarProperty Name="density" ColumnName="density" />
+            <ScalarProperty Name="depth" ColumnName="depth" />
+            <ScalarProperty Name="diameter" ColumnName="diameter" />
+            <ScalarProperty Name="gauge" ColumnName="gauge" />
+            <ScalarProperty Name="height0" ColumnName="height0" />
+            <ScalarProperty Name="length0" ColumnName="length0" />
+            <ScalarProperty Name="volume0" ColumnName="volume0" />
+            <ScalarProperty Name="weight0" ColumnName="weight0" />
+            <ScalarProperty Name="width0" ColumnName="width0" />
+            <ScalarProperty Name="xsize" ColumnName="xsize" />
+            <ScalarProperty Name="xstyle" ColumnName="xstyle" />
+            <ScalarProperty Name="xcolor" ColumnName="xcolor" />
+            <ScalarProperty Name="weight2" ColumnName="weight2" />
+            <ScalarProperty Name="dvtheight" ColumnName="dvtheight" />
+            <ScalarProperty Name="dvtlength" ColumnName="dvtlength" />
+            <ScalarProperty Name="dvtvolume" ColumnName="dvtvolume" />
+            <ScalarProperty Name="dvtweight" ColumnName="dvtweight" />
+            <ScalarProperty Name="dvtwidth" ColumnName="dvtwidth" />
+            <ScalarProperty Name="dvtdensity" ColumnName="dvtdensity" />
+            <ScalarProperty Name="dvtdepth" ColumnName="dvtdepth" />
+            <ScalarProperty Name="dvtdiameter" ColumnName="dvtdiameter" />
+            <ScalarProperty Name="dvtgauge" ColumnName="dvtgauge" />
+            <ScalarProperty Name="dvtheight0" ColumnName="dvtheight0" />
+            <ScalarProperty Name="dvtlength0" ColumnName="dvtlength0" />
+            <ScalarProperty Name="dvtvolume0" ColumnName="dvtvolume0" />
+            <ScalarProperty Name="dvtweight0" ColumnName="dvtweight0" />
+            <ScalarProperty Name="dvtwidth0" ColumnName="dvtwidth0" />
+            <ScalarProperty Name="dvtweight2" ColumnName="dvtweight2" />
+            <ScalarProperty Name="packs" ColumnName="packs" />
+            <ScalarProperty Name="dvtpacks" ColumnName="dvtpacks" />
+            <ScalarProperty Name="pack_size" ColumnName="pack_size" />
+            <ScalarProperty Name="nuoc_sx" ColumnName="nuoc_sx" />
+            <ScalarProperty Name="tg_th" ColumnName="tg_th" />
+            <ScalarProperty Name="sl_lo_chuan" ColumnName="sl_lo_chuan" />
+            <ScalarProperty Name="dvttg_th" ColumnName="dvttg_th" />
+            <ScalarProperty Name="dvtsl_lo_chuan" ColumnName="dvtsl_lo_chuan" />
+            <ScalarProperty Name="ghi_chu" ColumnName="ghi_chu" />
+            <ScalarProperty Name="ngay_mua" ColumnName="ngay_mua" />
+            <ScalarProperty Name="kieu_hd" ColumnName="kieu_hd" />
+            <ScalarProperty Name="ton_at" ColumnName="ton_at" />
+            <ScalarProperty Name="co_lo" ColumnName="co_lo" />
+            <ScalarProperty Name="so_ngay_dh" ColumnName="so_ngay_dh" />
+            <ScalarProperty Name="sl_dat_kt" ColumnName="sl_dat_kt" />
+            <ScalarProperty Name="vung_hd" ColumnName="vung_hd" />
+            <ScalarProperty Name="ma_lo_trinh" ColumnName="ma_lo_trinh" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="datetime0" ColumnName="datetime0" />
+            <ScalarProperty Name="datetime2" ColumnName="datetime2" />
+            <ScalarProperty Name="user_id0" ColumnName="user_id0" />
+            <ScalarProperty Name="user_id2" ColumnName="user_id2" />
+            <ScalarProperty Name="ma_td1" ColumnName="ma_td1" />
+            <ScalarProperty Name="ma_td2" ColumnName="ma_td2" />
+            <ScalarProperty Name="ma_td3" ColumnName="ma_td3" />
+            <ScalarProperty Name="sl_td1" ColumnName="sl_td1" />
+            <ScalarProperty Name="sl_td2" ColumnName="sl_td2" />
+            <ScalarProperty Name="sl_td3" ColumnName="sl_td3" />
+            <ScalarProperty Name="ngay_td1" ColumnName="ngay_td1" />
+            <ScalarProperty Name="ngay_td2" ColumnName="ngay_td2" />
+            <ScalarProperty Name="ngay_td3" ColumnName="ngay_td3" />
+            <ScalarProperty Name="gc_td1" ColumnName="gc_td1" />
+            <ScalarProperty Name="gc_td2" ColumnName="gc_td2" />
+            <ScalarProperty Name="gc_td3" ColumnName="gc_td3" />
+            <ScalarProperty Name="s1" ColumnName="s1" />
+            <ScalarProperty Name="s2" ColumnName="s2" />
+            <ScalarProperty Name="s3" ColumnName="s3" />
+            <ScalarProperty Name="s4" ColumnName="s4" />
+            <ScalarProperty Name="s5" ColumnName="s5" />
+            <ScalarProperty Name="s6" ColumnName="s6" />
+            <ScalarProperty Name="s7" ColumnName="s7" />
+            <ScalarProperty Name="s8" ColumnName="s8" />
+            <ScalarProperty Name="s9" ColumnName="s9" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ph71"><EntityTypeMapping TypeName="AppModel.ph71"><MappingFragment StoreEntitySet="ph71">
+            <ScalarProperty Name="stt_rec" ColumnName="stt_rec" />
+            <ScalarProperty Name="ma_dvcs" ColumnName="ma_dvcs" />
+            <ScalarProperty Name="ma_ct" ColumnName="ma_ct" />
+            <ScalarProperty Name="loai_ct" ColumnName="loai_ct" />
+            <ScalarProperty Name="so_lo" ColumnName="so_lo" />
+            <ScalarProperty Name="ngay_lo" ColumnName="ngay_lo" />
+            <ScalarProperty Name="ma_nk" ColumnName="ma_nk" />
+            <ScalarProperty Name="ma_gd" ColumnName="ma_gd" />
+            <ScalarProperty Name="ngay_lct" ColumnName="ngay_lct" />
+            <ScalarProperty Name="ngay_ct" ColumnName="ngay_ct" />
+            <ScalarProperty Name="so_ct" ColumnName="so_ct" />
+            <ScalarProperty Name="ma_nt" ColumnName="ma_nt" />
+            <ScalarProperty Name="ty_gia" ColumnName="ty_gia" />
+            <ScalarProperty Name="ong_ba" ColumnName="ong_ba" />
+            <ScalarProperty Name="ma_kh" ColumnName="ma_kh" />
+            <ScalarProperty Name="dien_giai" ColumnName="dien_giai" />
+            <ScalarProperty Name="ma_nx" ColumnName="ma_nx" />
+            <ScalarProperty Name="tk" ColumnName="tk" />
+            <ScalarProperty Name="so_ct0" ColumnName="so_ct0" />
+            <ScalarProperty Name="so_seri0" ColumnName="so_seri0" />
+            <ScalarProperty Name="ngay_ct0" ColumnName="ngay_ct0" />
+            <ScalarProperty Name="t_so_luong" ColumnName="t_so_luong" />
+            <ScalarProperty Name="t_tien_nt" ColumnName="t_tien_nt" />
+            <ScalarProperty Name="t_tien" ColumnName="t_tien" />
+            <ScalarProperty Name="t_thue_nt" ColumnName="t_thue_nt" />
+            <ScalarProperty Name="t_thue" ColumnName="t_thue" />
+            <ScalarProperty Name="tk_thue_no" ColumnName="tk_thue_no" />
+            <ScalarProperty Name="so_hd_gtgt" ColumnName="so_hd_gtgt" />
+            <ScalarProperty Name="t_tt_nt" ColumnName="t_tt_nt" />
+            <ScalarProperty Name="t_tt" ColumnName="t_tt" />
+            <ScalarProperty Name="ma_kh2" ColumnName="ma_kh2" />
+            <ScalarProperty Name="ma_tt" ColumnName="ma_tt" />
+            <ScalarProperty Name="t_tien0" ColumnName="t_tien0" />
+            <ScalarProperty Name="t_tien_nt0" ColumnName="t_tien_nt0" />
+            <ScalarProperty Name="t_nk" ColumnName="t_nk" />
+            <ScalarProperty Name="t_nk_nt" ColumnName="t_nk_nt" />
+            <ScalarProperty Name="t_ttdb" ColumnName="t_ttdb" />
+            <ScalarProperty Name="t_ttdb_nt" ColumnName="t_ttdb_nt" />
+            <ScalarProperty Name="t_cp_bh" ColumnName="t_cp_bh" />
+            <ScalarProperty Name="t_cp_bh_nt" ColumnName="t_cp_bh_nt" />
+            <ScalarProperty Name="t_cp_vc" ColumnName="t_cp_vc" />
+            <ScalarProperty Name="t_cp_vc_nt" ColumnName="t_cp_vc_nt" />
+            <ScalarProperty Name="t_cp_khac" ColumnName="t_cp_khac" />
+            <ScalarProperty Name="t_cp_khac_nt" ColumnName="t_cp_khac_nt" />
+            <ScalarProperty Name="t_cp" ColumnName="t_cp" />
+            <ScalarProperty Name="t_cp_nt" ColumnName="t_cp_nt" />
+            <ScalarProperty Name="gia_thue_yn" ColumnName="gia_thue_yn" />
+            <ScalarProperty Name="nam" ColumnName="nam" />
+            <ScalarProperty Name="ky" ColumnName="ky" />
+            <ScalarProperty Name="xtag" ColumnName="xtag" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="datetime0" ColumnName="datetime0" />
+            <ScalarProperty Name="datetime2" ColumnName="datetime2" />
+            <ScalarProperty Name="user_id0" ColumnName="user_id0" />
+            <ScalarProperty Name="user_id2" ColumnName="user_id2" />
+            <ScalarProperty Name="contract_id" ColumnName="contract_id" />
+            <ScalarProperty Name="bcontract_id" ColumnName="bcontract_id" />
+            <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+            <ScalarProperty Name="so_dh" ColumnName="so_dh" />
+            <ScalarProperty Name="job_id" ColumnName="job_id" />
+            <ScalarProperty Name="prd_id" ColumnName="prd_id" />
+            <ScalarProperty Name="dept_id" ColumnName="dept_id" />
+            <ScalarProperty Name="mo_nbr" ColumnName="mo_nbr" />
+            <ScalarProperty Name="fcode1" ColumnName="fcode1" />
+            <ScalarProperty Name="fcode2" ColumnName="fcode2" />
+            <ScalarProperty Name="fcode3" ColumnName="fcode3" />
+            <ScalarProperty Name="fdate1" ColumnName="fdate1" />
+            <ScalarProperty Name="fdate2" ColumnName="fdate2" />
+            <ScalarProperty Name="fdate3" ColumnName="fdate3" />
+            <ScalarProperty Name="fqty1" ColumnName="fqty1" />
+            <ScalarProperty Name="fqty2" ColumnName="fqty2" />
+            <ScalarProperty Name="fqty3" ColumnName="fqty3" />
+            <ScalarProperty Name="fnote1" ColumnName="fnote1" />
+            <ScalarProperty Name="fnote2" ColumnName="fnote2" />
+            <ScalarProperty Name="fnote3" ColumnName="fnote3" />
+            <ScalarProperty Name="s1" ColumnName="s1" />
+            <ScalarProperty Name="s2" ColumnName="s2" />
+            <ScalarProperty Name="s3" ColumnName="s3" />
+            <ScalarProperty Name="s4" ColumnName="s4" />
+            <ScalarProperty Name="s5" ColumnName="s5" />
+            <ScalarProperty Name="s6" ColumnName="s6" />
+            <ScalarProperty Name="s7" ColumnName="s7" />
+            <ScalarProperty Name="s8" ColumnName="s8" />
+            <ScalarProperty Name="s9" ColumnName="s9" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ph81"><EntityTypeMapping TypeName="AppModel.ph81"><MappingFragment StoreEntitySet="ph81">
+            <ScalarProperty Name="stt_rec" ColumnName="stt_rec" />
+            <ScalarProperty Name="ma_dvcs" ColumnName="ma_dvcs" />
+            <ScalarProperty Name="ma_ct" ColumnName="ma_ct" />
+            <ScalarProperty Name="loai_ct" ColumnName="loai_ct" />
+            <ScalarProperty Name="so_lo" ColumnName="so_lo" />
+            <ScalarProperty Name="ngay_lo" ColumnName="ngay_lo" />
+            <ScalarProperty Name="ma_nk" ColumnName="ma_nk" />
+            <ScalarProperty Name="ma_gd" ColumnName="ma_gd" />
+            <ScalarProperty Name="ngay_lct" ColumnName="ngay_lct" />
+            <ScalarProperty Name="ngay_ct" ColumnName="ngay_ct" />
+            <ScalarProperty Name="so_ct" ColumnName="so_ct" />
+            <ScalarProperty Name="ma_nt" ColumnName="ma_nt" />
+            <ScalarProperty Name="ty_gia" ColumnName="ty_gia" />
+            <ScalarProperty Name="ong_ba" ColumnName="ong_ba" />
+            <ScalarProperty Name="ma_kh" ColumnName="ma_kh" />
+            <ScalarProperty Name="dien_giai" ColumnName="dien_giai" />
+            <ScalarProperty Name="ma_nx" ColumnName="ma_nx" />
+            <ScalarProperty Name="tk" ColumnName="tk" />
+            <ScalarProperty Name="t_so_luong" ColumnName="t_so_luong" />
+            <ScalarProperty Name="t_tien_nt" ColumnName="t_tien_nt" />
+            <ScalarProperty Name="t_tien" ColumnName="t_tien" />
+            <ScalarProperty Name="t_thue_nt" ColumnName="t_thue_nt" />
+            <ScalarProperty Name="t_thue" ColumnName="t_thue" />
+            <ScalarProperty Name="t_tt_nt" ColumnName="t_tt_nt" />
+            <ScalarProperty Name="t_tt" ColumnName="t_tt" />
+            <ScalarProperty Name="ma_tt" ColumnName="ma_tt" />
+            <ScalarProperty Name="t_tien2" ColumnName="t_tien2" />
+            <ScalarProperty Name="t_tien_nt2" ColumnName="t_tien_nt2" />
+            <ScalarProperty Name="t_tien_km" ColumnName="t_tien_km" />
+            <ScalarProperty Name="t_tien_km_nt" ColumnName="t_tien_km_nt" />
+            <ScalarProperty Name="t_thue_km" ColumnName="t_thue_km" />
+            <ScalarProperty Name="t_thue_km_nt" ColumnName="t_thue_km_nt" />
+            <ScalarProperty Name="t_km" ColumnName="t_km" />
+            <ScalarProperty Name="t_km_nt" ColumnName="t_km_nt" />
+            <ScalarProperty Name="t_tc_tien2" ColumnName="t_tc_tien2" />
+            <ScalarProperty Name="t_tc_tien_nt2" ColumnName="t_tc_tien_nt2" />
+            <ScalarProperty Name="t_tc_thue" ColumnName="t_tc_thue" />
+            <ScalarProperty Name="t_tc_thue_nt" ColumnName="t_tc_thue_nt" />
+            <ScalarProperty Name="t_tc_tt" ColumnName="t_tc_tt" />
+            <ScalarProperty Name="t_tc_tt_nt" ColumnName="t_tc_tt_nt" />
+            <ScalarProperty Name="t_ck" ColumnName="t_ck" />
+            <ScalarProperty Name="t_ck_nt" ColumnName="t_ck_nt" />
+            <ScalarProperty Name="t_cp_bh" ColumnName="t_cp_bh" />
+            <ScalarProperty Name="t_cp_bh_nt" ColumnName="t_cp_bh_nt" />
+            <ScalarProperty Name="t_cp_vc" ColumnName="t_cp_vc" />
+            <ScalarProperty Name="t_cp_vc_nt" ColumnName="t_cp_vc_nt" />
+            <ScalarProperty Name="t_cp_khac" ColumnName="t_cp_khac" />
+            <ScalarProperty Name="t_cp_khac_nt" ColumnName="t_cp_khac_nt" />
+            <ScalarProperty Name="t_cp" ColumnName="t_cp" />
+            <ScalarProperty Name="t_cp_nt" ColumnName="t_cp_nt" />
+            <ScalarProperty Name="ma_nvbh" ColumnName="ma_nvbh" />
+            <ScalarProperty Name="ck_thue_yn" ColumnName="ck_thue_yn" />
+            <ScalarProperty Name="ma_gia" ColumnName="ma_gia" />
+            <ScalarProperty Name="ten_vtthue" ColumnName="ten_vtthue" />
+            <ScalarProperty Name="ghi_chuthue" ColumnName="ghi_chuthue" />
+            <ScalarProperty Name="tk_ck" ColumnName="tk_ck" />
+            <ScalarProperty Name="so_seri" ColumnName="so_seri" />
+            <ScalarProperty Name="ma_thue" ColumnName="ma_thue" />
+            <ScalarProperty Name="thue_suat" ColumnName="thue_suat" />
+            <ScalarProperty Name="tk_thue_no" ColumnName="tk_thue_no" />
+            <ScalarProperty Name="tk_thue_co" ColumnName="tk_thue_co" />
+            <ScalarProperty Name="ma_kh2" ColumnName="ma_kh2" />
+            <ScalarProperty Name="nam" ColumnName="nam" />
+            <ScalarProperty Name="ky" ColumnName="ky" />
+            <ScalarProperty Name="xtag" ColumnName="xtag" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="datetime0" ColumnName="datetime0" />
+            <ScalarProperty Name="datetime2" ColumnName="datetime2" />
+            <ScalarProperty Name="user_id0" ColumnName="user_id0" />
+            <ScalarProperty Name="user_id2" ColumnName="user_id2" />
+            <ScalarProperty Name="contract_id" ColumnName="contract_id" />
+            <ScalarProperty Name="bcontract_id" ColumnName="bcontract_id" />
+            <ScalarProperty Name="fee_id" ColumnName="fee_id" />
+            <ScalarProperty Name="so_dh" ColumnName="so_dh" />
+            <ScalarProperty Name="job_id" ColumnName="job_id" />
+            <ScalarProperty Name="prd_id" ColumnName="prd_id" />
+            <ScalarProperty Name="dept_id" ColumnName="dept_id" />
+            <ScalarProperty Name="mo_nbr" ColumnName="mo_nbr" />
+            <ScalarProperty Name="fcode1" ColumnName="fcode1" />
+            <ScalarProperty Name="fcode2" ColumnName="fcode2" />
+            <ScalarProperty Name="fcode3" ColumnName="fcode3" />
+            <ScalarProperty Name="fdate1" ColumnName="fdate1" />
+            <ScalarProperty Name="fdate2" ColumnName="fdate2" />
+            <ScalarProperty Name="fdate3" ColumnName="fdate3" />
+            <ScalarProperty Name="fqty1" ColumnName="fqty1" />
+            <ScalarProperty Name="fqty2" ColumnName="fqty2" />
+            <ScalarProperty Name="fqty3" ColumnName="fqty3" />
+            <ScalarProperty Name="fnote1" ColumnName="fnote1" />
+            <ScalarProperty Name="fnote2" ColumnName="fnote2" />
+            <ScalarProperty Name="fnote3" ColumnName="fnote3" />
+            <ScalarProperty Name="s1" ColumnName="s1" />
+            <ScalarProperty Name="s2" ColumnName="s2" />
+            <ScalarProperty Name="s3" ColumnName="s3" />
+            <ScalarProperty Name="s4" ColumnName="s4" />
+            <ScalarProperty Name="s5" ColumnName="s5" />
+            <ScalarProperty Name="s6" ColumnName="s6" />
+            <ScalarProperty Name="s7" ColumnName="s7" />
+            <ScalarProperty Name="s8" ColumnName="s8" />
+            <ScalarProperty Name="s9" ColumnName="s9" />
+            <ScalarProperty Name="ma_httt" ColumnName="ma_httt" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="App" ZoomLevel="100" DisplayType="false">
+        <EntityTypeShape EntityType="AppModel.ct70" Width="1.5" PointX="10.75" PointY="0.75" Height="27.940979817708335" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppModel.ct71" Width="1.5" PointX="8" PointY="1.75" Height="17.941305338541675" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppModel.ct81" Width="1.5" PointX="3" PointY="2" Height="20.248922526041675" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppModel.dmct" Width="1.5" PointX="12.75" PointY="0.75" Height="16.787496744791667" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppModel.dmkh" Width="1.5" PointX="14.75" PointY="0.75" Height="11.787659505208332" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppModel.dmvt" Width="1.5" PointX="14.75" PointY="13.75" Height="24.094951171875003" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppModel.ph71" Width="1.5" PointX="5.75" PointY="2" Height="17.364401041666675" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppModel.ph81" Width="1.5" PointX="0.75" PointY="1.875" Height="20.441223958333332" IsExpanded="true" />
+        <AssociationConnector Association="AppModel.FK_ct71_ph71" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.25" PointY="10.682200520833337" />
+          <ConnectorPoint PointX="8" PointY="10.682200520833337" />
+        </AssociationConnector>
+        <AssociationConnector Association="AppModel.FK_ct81_ph81" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="12.124461263020837" />
+          <ConnectorPoint PointX="3" PointY="12.124461263020837" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
